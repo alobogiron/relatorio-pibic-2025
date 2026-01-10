@@ -6,61 +6,104 @@ A presente seção descreve de forma sistemática os processos realizados e os e
 \subsection{Evolução do Módulo de Contagem de Pessoas}
 \label{subsec:evolve_count_people}
 
-Assim como descrito anteriormente, o módulo de contagem de pessoas do dispositivo BIoT configura os sensores utilizados para coleta dos dados, bem como a lógica empregada na aquisição e processamento das informações. Tendo como principal objetivo, comunicar ao sistema a entrada ou saída de qualquer indivíduo em uma instalação que possua um dispositivo BIoT. Comumente, os sistemas de software IoT baseiam-se em séries temporais
+Assim como descrito anteriormente, o módulo de contagem de pessoas do dispositivo BIoT configura os sensores utilizados para coleta dos dados, bem como a lógica empregada na aquisição e processamento das informações. Tendo como principal objetivo, comunicar ao sistema a entrada ou saída de qualquer indivíduo em uma instalação que possua um dispositivo BIoT. Comumente, sistemas de software IoT baseiam-se na coleta periódica de informações, como forma de realizar o monitoramento, isto resulta na obtenção de séries temporais que correspondem ao comportamento do fenômeno em observação, neste caso, a  entrada e saída de pessoas em uma instalação.
 
-A abordagem proposta anteriormente, para monitorar a quantidade de indivíduos em umas instalação.
+O módulo de sensoreamento para contagem de pessoas, é composto por dois sensores ultrassônicos HC-SR04, que possuem invólucros e estrutura construída através de impressão 3D. Estes sensores ficam posicionados acima da porta da instalação onde deseja-se contabilizar o número de pessoas, assim como apresentado na Figura \ref{fig:count_people_module}. Os sensores ultrassônicos são capazes de coletar medidas acerca da distância entre eles e indivíduos ou objetos que estejam abaixo deles e  no raio de alcance do seu emissor e receptor de ondas, possibilitando o sensoreamento da área de entrada/saída do ambiente escolhido.
+
+\begin{figure}[H]
+    \center
+    \includegraphics[scale=0.3]{images/count_people_module.png}
+    \caption{Módulo de Sensoreamento para Contagem de Pessoas.}
+    \label{fig:count_people_module}
+\end{figure}
+
+O primeiro algoritmo proposto, para monitorar a quantidade de indivíduos em uma instalação baseia-se principalmente na disposição dos sensores ultrassônicos, que pode ser observado na Figura \ref{fig:count_people_module}, e no caráter contínuo dos dados coletados pelo dispositivo BIoT. Por este motivo, para cada evento de entrada/saída, a série temporal coletada possui padrões bem definidos de ativação dos sensores. No caso de uma entrada, o sensor externo será ativado antes do sensor interno, bem como será o primeiro a ser desativado, para eventos de saída, o contrário acontece. Deste modo, o rastreamento de eventos de interesse, torna-se uma tarefa de identificação de padrões de ativação dos sensores através dos dados coletados.
+
+Para lidar com este objetivo, o algortimo construído consiste primeiramente na binarização dos dados coletados através de um limite pré-estabelecido, para que os estados dos sensores (ativado/desativado) sejam facilmente diferenciados, assim como descrito no Algoritmo \ref{alg:people_counting}. Após a binarização, o algoritmo compara o estado atual(tupla com dois valores booleanos) com o estado anterior, para identificar e armazenar toda mudança de estado. Sempre que ocorre uma mudança no estado, a tupla correspondente a este estado é armazenada em um vetor que atua como janela deslizante, após ser armazenado o último estado do vetor é descartado.  
+
+está descrita no Algoritmo \ref{alg:people_counting}
+
+
+A lógica implementada para identificar e contabilizar estes eventos de interesse está descrita no Algoritmo \ref{alg:people_counting}.
+
+
+faz uso destas características e esta na presente no Algoritmo \ref{alg:people_counting}.
+
+
+que durante os eventos de interesse, ou seja, durante a entrada ou saída de um indivíduo, 
 
 % ------------------------------------------------------------
 % No corpo do documento:
 
-\begin{algorithm}[t]
-\caption{Pattern Extraction and Matching from Time-Series Tuples}
-\label{alg:pattern_match}
+
+\begin{algorithm}[H]
+\caption{Lógica Inicial Para Contagem de Pessoas}
+\label{alg:people_counting}
 \begin{algorithmic}[1]
 
-\Function{BINARIZE}{$X,\;\theta$}
-  \State \Comment{$X$ is an array of tuples, e.g., $X[i] = (x_1,x_2)$}
-  \State $B \gets [\ ]$
-  \For{$i \gets 1$ \textbf{to} $|X|$}
-    \State $(u,v) \gets X[i]$
-    \State $b_1 \gets \begin{cases} 1, & u \ge \theta \\ 0, & u < \theta \end{cases}$
-    \State $b_2 \gets \begin{cases} 1, & v \ge \theta \\ 0, & v < \theta \end{cases}$
-    \State \Call{APPEND}{$B,\;(b_1,b_2)$} \Comment{Binary tuple}
-  \EndFor
-  \State \Return $B$
-\EndFunction
-
-\vspace{0.4em}
-
-\Function{DEDUP\_CONSECUTIVE}{$B$}
-  \State \Comment{Removes repeated values only when they are consecutive}
-  \If{$|B| = 0$}
-    \State \Return $[\ ]$
+\Function{COMPARAR\_VETORES}{$A,\;B$}
+  \State \Comment{$A$ e $B$ são vetores}
+  \If{$|A| \ne |B|$}  \Comment{Compara se os vetores possuem o mesmo tamanho}
+    \State \Return \textbf{false}
   \EndIf
-  \State $P \gets [B[1]]$ \Comment{Output pattern}
-  \For{$i \gets 2$ \textbf{to} $|B|$}
-    \If{$B[i] \ne B[i-1]$}
-      \State \Call{APPEND}{$P,\;B[i]$} \Comment{Keep only changes}
+
+	\For{$i \gets 1$ \textbf{to} $|A|$} \Comment{Compara o valor de cada item dos vetores}
+    \If{$A[i] \ne B[i]$}
+      \State \Return \textbf{false}
     \EndIf
   \EndFor
-  \State \Return $P$
+
+	\State \Return \textbf{true} \Comment{Verdadeiro caso os vetores sejam iguais}
 \EndFunction
 
-\vspace{0.4em}
+\vspace{0.8em}
 
-\Function{MATCH\_PATTERN}{$P,\;E,\;S$}
-  \State \Comment{$P$ is the deduplicated pattern; $E$ and $S$ are predefined patterns}
-  \If{\Call{EQUAL}{$P,\;E$}}
-    \State \Return \textbf{ENTERED} \Comment{Matches entry pattern}
-  \ElsIf{\Call{EQUAL}{$P,\;S$}}
-    \State \Return \textbf{LEFT} \Comment{Matches exit pattern}
-  \Else
-    \State \Return \textbf{NO\_MATCH}
-  \EndIf
+\Function{CALCULAR\_NUMERO\_DE\_PESSOAS}{$M$}
+  \State \Comment{$M$ é o vetor de medidas brutas}
+  \State $b \gets (0,0)$ \Comment{Vetor que armazena o estado atual binarizado}
+  \State $entrada \gets 0$
+  \State $saida \gets 0$
+  \State $TOLERANCIA \gets 60$ \Comment{Limite para a binarização}
+  \State $W \gets [(0,0),(0,0),(0,0),(0,0),(0,0)]$ \Comment{Vetor para o espaço de estados}
+
+  \For{\textbf{each} $m \in M$}
+    \State \Comment{--- Etapa de binarização das medidas brutas---}
+    \If{$m.distancia\_sensor\_interno < TOLERANCIA$}
+      \State $b_1 \gets 1$
+    \Else
+      \State $b_1 \gets 0$
+    \EndIf
+
+    \If{$m.distancia\_sensor\_externo < TOLERANCIA$}
+      \State $b_2 \gets 1$
+    \Else
+      \State $b_2 \gets 0$
+    \EndIf
+
+    \State \Comment{--- Etapa de construção do padrão de bits capturado ---}
+    \If{\textbf{not} \Call{COMPARAR\_VETORES}{$b,\;W[5]$}}
+      \State \Call{SHIFT\_LEFT}{$W$} \Comment{Descarta estado antigo}
+      \State $W[5] \gets b$ \Comment{Armazena o novo estado}
+
+      \State \Comment{--- Etapa de identificação do evento de interesse ---}
+      \If{\Call{COMPARAR\_VETORES}{$W,\;PADRAO\_DE\_ENTRADA$}}
+        \State $entrada \gets entrada + 1$
+      \ElsIf{\Call{COMPARAR\_VETORES}{$W,\;PADRAO\_DE\_SAIDA$}}
+        \State $saida \gets saida + 1$
+      \EndIf
+	\State \Comment{Padrões inválidos não geram contagem}
+    \EndIf
+  \EndFor
+
+  \State \Return $(entrada, saida)$
 \EndFunction
+
+
+
 
 \end{algorithmic}
 \end{algorithm}
+
 
 \subsection{Análise dos Dados Coletados}
 \label{subsec:data_analysis}
