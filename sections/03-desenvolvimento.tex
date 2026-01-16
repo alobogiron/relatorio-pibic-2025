@@ -3,34 +3,24 @@
 
 A presente seção descreve de forma sistemática os processos realizados e os esforços empreendidos com vistas ao alcance dos objetivos previamente estabelecidos. Para assegurar a clareza da exposição e preservar o contexto de cada etapa do trabalho, o conteúdo foi organizado nas Subseções \ref{subsec:evolve_count_people} e \ref{subsec:data_analysis}, de modo a facilitar a compreensão do leitor.
 
-\subsection{Evolução do Módulo de Contagem de Pessoas}
-\label{subsec:evolve_count_people}
+\subsection{Módulo Existente e suas Limitações}
+\label{subsec:existent_module_and_limitations}
 
-Assim como descrito anteriormente, o módulo de contagem de pessoas do dispositivo BIoT configura os sensores utilizados para coleta dos dados, bem como a lógica empregada na aquisição e processamento das informações. Tendo como principal objetivo, comunicar ao sistema a entrada ou saída de qualquer indivíduo em uma instalação que possua um dispositivo BIoT. Comumente, sistemas de software IoT baseiam-se na coleta periódica de informações, como forma de realizar o monitoramento, isto resulta na obtenção de séries temporais que correspondem ao comportamento do fenômeno em observação, neste caso, a  entrada e saída de pessoas em uma instalação.
+Assim como descrito anteriormente, o módulo de contagem de pessoas do dispositivo BIoT configura os sensores utilizados para coleta dos dados, bem como a lógica empregada na aquisição e processamento das informações. Seu  principal objetivo, é comunicar ao sistema a entrada ou saída de qualquer indivíduo em uma instalação que possua um dispositivo BIoT. Comumente, sistemas de software IoT baseiam-se na coleta periódica de informações, como forma de realizar o monitoramento, isto resulta na obtenção de um conjunto de dados que devem permitir a caracterização do fenômeno em observação, neste caso, a entrada e saída de pessoas em uma instalação.
 
-O módulo de sensoreamento para contagem de pessoas, é composto por dois sensores ultrassônicos HC-SR04, que possuem invólucros e estrutura construída através de impressão 3D. Estes sensores ficam posicionados acima da porta da instalação onde deseja-se contabilizar o número de pessoas, assim como apresentado na Figura \ref{fig:count_people_module}. Os sensores ultrassônicos são capazes de coletar medidas acerca da distância entre eles e indivíduos ou objetos que estejam abaixo deles e  no raio de alcance do seu emissor e receptor de ondas, possibilitando o sensoreamento da área de entrada/saída do ambiente escolhido.
+O módulo de sensoriamento para contagem de pessoas, é composto por dois sensores ultrassônicos HC-SR04, que possuem invólucro e estrutura construída através de impressão 3D. Estes sensores ficam posicionados acima da porta da instalação onde deseja-se contabilizar o número de pessoas, assim como apresentado na Figura \ref{fig:count_people_module}. Os sensores ultrassônicos são capazes de coletar medidas acerca da distância entre eles e indivíduos ou objetos que estejam abaixo deles, e dentro do raio de alcance do seu emissor e receptor de ondas, possibilitando o sensoriamento da área de entrada/saída do ambiente escolhido.
 
 \begin{figure}[H]
     \center
     \includegraphics[scale=0.3]{images/count_people_module.png}
-    \caption{Módulo de Sensoreamento para Contagem de Pessoas.}
+    \caption{Módulo de Sensoriamento para Contagem de Pessoas.}
     \label{fig:count_people_module}
 \end{figure}
 
-O primeiro algoritmo proposto, para monitorar a quantidade de indivíduos em uma instalação baseia-se principalmente na disposição dos sensores ultrassônicos, que pode ser observado na Figura \ref{fig:count_people_module}, e no caráter contínuo dos dados coletados pelo dispositivo BIoT. Por este motivo, para cada evento de entrada/saída, a série temporal coletada possui padrões bem definidos de ativação dos sensores. No caso de uma entrada, o sensor externo será ativado antes do sensor interno, bem como será o primeiro a ser desativado, para eventos de saída, o contrário acontece. Deste modo, o rastreamento de eventos de interesse, torna-se uma tarefa de identificação de padrões de ativação dos sensores através dos dados coletados.
+O primeiro algoritmo proposto, para monitorar a quantidade de indivíduos em uma instalação baseia-se principalmente na disposição dos sensores ultrassônicos, que pode ser observada na Figura \ref{fig:count_people_module}, e no caráter contínuo dos dados coletados pelo dispositivo BIoT. Por este motivo, para cada evento de entrada/saída, a sequência de dados coletados possui padrões bem definidos de ativação dos sensores. No caso de uma entrada, o sensor externo será ativado antes do sensor interno, bem como será o primeiro a ser desativado, para eventos de saída, o contrário acontece. Deste modo, o rastreamento de eventos de interesse, torna-se uma tarefa de identificação de padrões de ativação dos sensores através dos dados coletados.
 
-Para lidar com este objetivo, o algortimo construído consiste primeiramente na binarização dos dados coletados através de um limite pré-estabelecido, para que os estados dos sensores (ativado/desativado) sejam facilmente diferenciados, assim como descrito no Algoritmo \ref{alg:people_counting}. Após a binarização, o algoritmo compara o estado atual(tupla com dois valores booleanos) com o estado anterior, para identificar e armazenar toda mudança de estado. Sempre que ocorre uma mudança no estado, a tupla correspondente a este estado é armazenada em um vetor que atua como janela deslizante, após ser armazenado o último estado do vetor é descartado.  
+	Para lidar com este objetivo, o algortimo construído consiste primeiramente na binarização dos dados coletados através de um limite pré-estabelecido, para que os estados dos sensores (ativado/desativado) sejam diferenciados, assim como apresentado no Algoritmo \ref{alg:people_counting}. Após a binarização, o algoritmo compara o estado atual(tupla com dois valores booleanos) com o estado anterior, para identificar e armazenar toda mudança de estado. Este novo estado, é armazenado em uma janela deslizante de tamanho fixo e a última tupla armazenada é descartada. Por fim, para cada novo estado, o algoritmo realiza a comparação entre a janela deslizante e os padrões de entrada e saída, buscando detectar e contabilizar eventos de interesse. Todos este fluxo pode ser visualizado através do Algoritmo \ref{alg:people_counting}.
 
-está descrita no Algoritmo \ref{alg:people_counting}
-
-
-A lógica implementada para identificar e contabilizar estes eventos de interesse está descrita no Algoritmo \ref{alg:people_counting}.
-
-
-faz uso destas características e esta na presente no Algoritmo \ref{alg:people_counting}.
-
-
-que durante os eventos de interesse, ou seja, durante a entrada ou saída de um indivíduo, 
 
 % ------------------------------------------------------------
 % No corpo do documento:
@@ -59,8 +49,10 @@ que durante os eventos de interesse, ou seja, durante a entrada ou saída de um 
 \vspace{0.8em}
 
 \Function{CALCULAR\_NUMERO\_DE\_PESSOAS}{$M$}
+  \State $PADRAO\_DE\_ENTRADA$ \gets $[(0,0),(0,1),(1,1),(1,0),(0,0)]$
+  \State $PADRAO\_DE\_SAIDA$ \gets $[(0,0),(1,0),(1,1),(0,1),(0,0)]$
   \State \Comment{$M$ é o vetor de medidas brutas}
-  \State $b \gets (0,0)$ \Comment{Vetor que armazena o estado atual binarizado}
+	\State $estado\_do\_sensor \gets (s_{interno},s_{externo})$ \Comment{Vetor que armazena o estado atual binarizado}
   \State $entrada \gets 0$
   \State $saida \gets 0$
   \State $TOLERANCIA \gets 60$ \Comment{Limite para a binarização}
@@ -69,21 +61,21 @@ que durante os eventos de interesse, ou seja, durante a entrada ou saída de um 
   \For{\textbf{each} $m \in M$}
     \State \Comment{--- Etapa de binarização das medidas brutas---}
     \If{$m.distancia\_sensor\_interno < TOLERANCIA$}
-      \State $b_1 \gets 1$
+      \State $s_{interno} \gets 1$
     \Else
-      \State $b_1 \gets 0$
+      \State $s_{interno} \gets 0$
     \EndIf
 
     \If{$m.distancia\_sensor\_externo < TOLERANCIA$}
-      \State $b_2 \gets 1$
+      \State $s_{externo} \gets 1$
     \Else
-      \State $b_2 \gets 0$
+      \State $s_{externo} \gets 0$
     \EndIf
 
     \State \Comment{--- Etapa de construção do padrão de bits capturado ---}
-    \If{\textbf{not} \Call{COMPARAR\_VETORES}{$b,\;W[5]$}}
+    \If{\textbf{not} \Call{COMPARAR\_VETORES}{$estado\_do\_sensor,\;W[5]$}}
       \State \Call{SHIFT\_LEFT}{$W$} \Comment{Descarta estado antigo}
-      \State $W[5] \gets b$ \Comment{Armazena o novo estado}
+      \State $W[5] \gets estado\_do\_sensor$ \Comment{Armazena o novo estado na última posição}
 
       \State \Comment{--- Etapa de identificação do evento de interesse ---}
       \If{\Call{COMPARAR\_VETORES}{$W,\;PADRAO\_DE\_ENTRADA$}}
@@ -98,12 +90,61 @@ que durante os eventos de interesse, ou seja, durante a entrada ou saída de um 
   \State \Return $(entrada, saida)$
 \EndFunction
 
-
-
-
 \end{algorithmic}
 \end{algorithm}
 
+A lógica existente no Algoritmo \ref{alg:people_counting} faz uso de ideias centrais, para a tarefa de contagem de indivíduos em uma instalação por meio da coleta de dados com dispositivos IoT, como discretização dos dados e análise de mudança de estados dos sensores. No entanto, a abordagem descrita apresentou problemas sérios durante testes práticos de funcionalidade, tendo como principal fator de causa de problemas, a inexistência de uma etapa de tratamento das medidas coletadas. Desta forma, qualquer ruído/problema de leitura pode induzir o sistema a gerar um estado incorreto, invisibilizando eventos de interesse e resultando em um monitoramento impreciso acerca da contagem de indivíduos em uma instalação. Sistema de software IoT, tem como uma de suas principais características, a utilização de sensores de baixo custo, para construção dos dispositivos encarregados de realizar a coleta de dados, esta categoria de sensor tende a ser mais imprecisa e ruidosa (precise de uma ref), por este motivo o sistema deve ser resiliente a este tipo de problema.
+
+Antes de tratar ruídos e \textit{outliers}, é necessário compreender o verdadeiro gerador deste tipo de informação. Isto se faz necessário, pois este tipo de dado pode fornecer informações úteis para a etapa de modelagen do problema, bem como a exclusão de informações importantes de forma errônea pode comprometer todo o \textit{dataset} inserindo viés ou simplesmente desperdiçando informações importantes \cite{Komorowski2016}. Logo, a primeira etapa do processo de evolução do módulo de contagem de pessoas, consiste na coleta e análise exploratória dos dados, para que se possa compreender e reconhecer os padrões naturais presentes na informação coletada \cite{Komorowski2016}.
+
+%%Inicio da seção de análise exploratória
+
+\subsection{Análise Exploratória dos Dados}
+\label{subsec:exploratory_data_analysis}
+
+A visualização gráfica é um ótimo método para análise de dados, pois permite apresentar características como dispersão e padrões de comportamento, apenas através da coleta de dados(ref de analise monitoradores de saúde e ese). Para a etapa de coleta dos dados, foi necessário a elaboração de um roteiro que cobrisse todos os possíveis eventos de entrada e saída de um indivíduo na instalação, para isso foi elaborado a Tabela \ref{tab:events_description}, que apresenta a numeração de cada evento e sua descrição. Este processo fez-se necessário, pois foi observado, que havia grande variação entre eventos envolviam a alteração no estado da porta.
+
+\renewcommand{\arraystretch}{1.3}
+\begin{table}[H]
+	\centering
+	\caption{Roteiro de Eventos para Etapa de Coleta de Dados}
+	\label{tab:events_description}
+	\begin{tabular}{|c|c|l|}
+		\hline
+		\multicolumn{1}{|l|}{\textbf{Evento}} & \multicolumn{1}{l|}{\textbf{Estado Inicial da Porta}} & \multicolumn{1}{c|}{\textbf{Descrição}}                    \\ \hline
+		1                                     & Fechada                                               & Abrir a porta, realizar a entrada e fechar a porta.        \\
+		2                                     & Fechada                                               & Abrir a porta, realizar a saída e fechar a porta.          \\
+		3                                     & Fechada                                               & Abrir a porta, realizar a entrada e manter a porta aberta. \\
+		4                                     & Fechada                                               & Abrir a porta, realizar a saída e manter a porta aberta.   \\
+		5                                     & Aberta                                                & Realizar a entrada e manter a porta aberta.                \\
+		6                                     & Aberta                                                & Realizar a saída e manter a porta aberta.                  \\
+		7                                     & Aberta                                                & Realizar a entrada e fechar a porta.                       \\
+		8                                     & Aberta                                                & Realizar a saída e fechar a porta.                         \\ \hline
+	\end{tabular}
+\end{table}
+
+O roteiro de coleta de dados foi executado com seis indivíduos diferentes para que se pudesse observar variações e dispersões em função dos indivíduos e da forma de entrada/saída de cada um. Para facilitar estas observações, cada evento realizado possui uma gravação de vídeo correspondente, que atua como registro auxiliar durante a etapa de análise dos dados. Desta forma, todo o processo torna-se mais auditável, tendo em vista que todo o evento pode ser reassistido, ajudando na melhor compreensão de ruídos e \textit{outliers}. A Figura \ref{fig:data_collect} apresenta um conjunto de imagens acerca dos registros de vídeo.
+
+\begin{figure}[ht]
+    \center
+    \includegraphics[scale=0.25]{images/data_collect.png}
+    \caption{Registros de vídeo realizados durante a coleta de dados}
+    \label{fig:data_collect}
+\end{figure}
+
+Para a etapa de construção das visualizações gráficas, empregou-se predominantemente a técnica de gráficos bidimensionais de pontos e linhas, conforme ilustrado na Figura \ref{fig:data_visualization}. Essas visualizações representam graficamente os valores de um vetor no eixo y em função de intervalos regulares no eixo x \cite{Komorowski2016}. No contexto da Figura \ref{fig:data_visualization}, o eixo y apresenta os valores de distância medidos pelos sensores ultrassônicos, enquanto o eixo x corresponde ao instante temporal de cada coleta. Essa abordagem foi adotada pois, em conjunto com os registros de vídeo, permite auditar individualmente cada amostra coletada (representada por um ponto no gráfico), possibilitando a identificação visual de inconsistências, anomalias e medições claramente incompatíveis com o cenário físico observado.
+
+
+\begin{figure}[ht]
+    \center
+	\fbox{\includegraphics[scale=0.22]{images/datapoints_visualization.png}}
+    \caption{Visualização gráfica de um evento de entrada}
+    \label{fig:data_visualization}
+\end{figure}
+
+A etapa de análise visual dos gráficos apresentou dois padrões de \textit{outliers}, valores superiores a distância total entre os sensores ultrassônicos e o piso, isto é, registros que deveriam ser impossíveis de serem coletados e valores nulos. Ambos podem ser justificados   
+
+%%Final da seção de análise exploratória
 
 \subsection{Análise dos Dados Coletados}
 \label{subsec:data_analysis}

@@ -74,4 +74,12 @@ N.~Rios, R.~Sp{\'i}nola, and G.~H. Travassos, ``Exploring technical debt on iot
   Available: \url{https://doi.org/10.1145/3571473.3571495}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Komorowski2016}
+\BIBentryALTinterwordspacing
+M.~Komorowski, D.~C. Marshall, J.~D. Salciccioli, and Y.~Crutain,
+  \emph{Exploratory Data Analysis}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Cham: Springer International Publishing, 2016, pp. 185--203. [Online].
+  Available: \url{https://doi.org/10.1007/978-3-319-43742-2_15}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
