@@ -296,6 +296,8 @@ INPUT ./images/data_collect.png
 INPUT ./images/data_collect.png
 INPUT ./images/datapoints_visualization.png
 INPUT ./images/datapoints_visualization.png
+INPUT ./images/noise_analysis.png
+INPUT ./images/noise_analysis.png
 INPUT ./images/arq_safe.png
 INPUT ./images/arq_safe.png
 INPUT ./images/exemplo_erro.png
