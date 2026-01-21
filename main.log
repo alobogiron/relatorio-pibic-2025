@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  20 JAN 2026 11:40
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  21 JAN 2026 12:03
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1108,21 +1108,6 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (./main.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 8.
-
-LaTeX Warning: Label `fig:dashboard_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:dashboard_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:dashboard_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:dashboard_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:dashboard_1' multiply defined.
-
 )
 \openout1 = main.aux
 
@@ -1280,7 +1265,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./sections/title.tex
-<images/Marca_Principal.png, id=39, 845.0772pt x 597.432pt>
+<images/Marca_Principal.png, id=43, 845.0772pt x 597.432pt>
 File: images/Marca_Principal.png Graphic file (type png)
 <use images/Marca_Principal.png>
 Package luatex.def Info: images/Marca_Principal.png  used on input line 5.
@@ -1295,23 +1280,15 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 \openout5 = main.toc
 
-(./sections/01-introducao.tex [2]) (./sections/02-objetivos.tex [3])
+(./sections/01-introducao.tex [2] [3]) (./sections/02-objetivos.tex)
 (./sections/03-desenvolvimento.tex
-
-LaTeX Warning: Reference `subsec:evolve_count_people' on page 4 undefined on in
-put line 4.
-
-
-LaTeX Warning: Reference `subsec:data_analysis' on page 4 undefined on input li
-ne 4.
-
-<images/count_people_module.png, id=91, 1139.25626pt x 869.2475pt>
+<images/count_people_module.png, id=100, 1139.25626pt x 869.2475pt>
 File: images/count_people_module.png Graphic file (type png)
 <use images/count_people_module.png>
 Package luatex.def Info: images/count_people_module.png  used on input line 15.
 
 (luatex.def)             Requested size: 341.77951pt x 260.77626pt.
-[4]
+ [4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 30.
  [5
@@ -1319,12 +1296,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 <./images/count_people_module.png>] [6] [7
 warning  (pdf backend): ignoring duplicate destination with the name 'table.1'
 ]
-<images/data_collect.png, id=129, 1722.435pt x 886.31125pt>
+<images/data_collect.png, id=138, 1722.435pt x 886.31125pt>
 File: images/data_collect.png Graphic file (type png)
 <use images/data_collect.png>
 Package luatex.def Info: images/data_collect.png  used on input line 130.
 (luatex.def)             Requested size: 430.6077pt x 221.57727pt.
-<images/datapoints_visualization.png, id=133, 1891.065pt x 1010.77625pt>
+<images/datapoints_visualization.png, id=142, 1891.065pt x 1010.77625pt>
 File: images/datapoints_visualization.png Graphic file (type png)
 <use images/datapoints_visualization.png>
 Package luatex.def Info: images/datapoints_visualization.png  used on input lin
@@ -1335,107 +1312,50 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
 <./images/data_collect.png><./images/datapoints_visualization.png>]
-<images/noise_analysis.png, id=144, 1923.185pt x 990.70125pt>
+<images/noise_analysis.png, id=153, 1923.185pt x 990.70125pt>
 File: images/noise_analysis.png Graphic file (type png)
 <use images/noise_analysis.png>
 Package luatex.def Info: images/noise_analysis.png  used on input line 150.
 (luatex.def)             Requested size: 483.69687pt x 249.17126pt.
  [9
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.4'
-<./images/noise_analysis.png>] [10]
-<images/arq_safe.png, id=162, 1465.475pt x 639.38875pt>
-File: images/arq_safe.png Graphic file (type png)
-<use images/arq_safe.png>
-Package luatex.def Info: images/arq_safe.png  used on input line 172.
-(luatex.def)             Requested size: 439.64589pt x 191.8181pt.
+<./images/noise_analysis.png>]
+<images/strategy_workflow.png, id=165, 1728.4575pt x 818.05624pt>
+File: images/strategy_workflow.png Graphic file (type png)
+<use images/strategy_workflow.png>
+Package luatex.def Info: images/strategy_workflow.png  used on input line 168.
+(luatex.def)             Requested size: 380.26183pt x 179.97293pt.
+ [10]
+<images/smoothing_analysis.png, id=177, 1891.065pt x 559.08875pt>
+File: images/smoothing_analysis.png Graphic file (type png)
+<use images/smoothing_analysis.png>
+Package luatex.def Info: images/smoothing_analysis.png  used on input line 180.
+
+(luatex.def)             Requested size: 483.69687pt x 143.00508pt.
  [11
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.5'
-<./images/arq_safe.png>]
-<images/exemplo_erro.png, id=172, 574.145pt x 328.22626pt>
-File: images/exemplo_erro.png Graphic file (type png)
-<use images/exemplo_erro.png>
-Package luatex.def Info: images/exemplo_erro.png  used on input line 189.
-(luatex.def)             Requested size: 229.65393pt x 131.28816pt.
-<images/rotas_api.png, id=174, 969.6225pt x 221.82875pt>
-File: images/rotas_api.png Graphic file (type png)
-<use images/rotas_api.png>
-Package luatex.def Info: images/rotas_api.png  used on input line 202.
-(luatex.def)             Requested size: 387.84213pt x 88.72992pt.
-<images/dashboard_1.png, id=177, 1924.18875pt x 874.26625pt>
-File: images/dashboard_1.png Graphic file (type png)
-<use images/dashboard_1.png>
-Package luatex.def Info: images/dashboard_1.png  used on input line 215.
-(luatex.def)             Requested size: 481.046pt x 218.56602pt.
- [12
+<./images/strategy_workflow.png>]) (./sections/04-trab-futuros.tex)
+(./sections/06-consideracoes.tex) (./main.bbl [12
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.6'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.7'
-<./images/exemplo_erro.png><./images/rotas_api.png>]
-<images/dashboard_2.png, id=187, 1918.16624pt x 966.61125pt>
-File: images/dashboard_2.png Graphic file (type png)
-<use images/dashboard_2.png>
-Package luatex.def Info: images/dashboard_2.png  used on input line 226.
-(luatex.def)             Requested size: 479.54039pt x 241.65222pt.
-)
-(./sections/04-trab-futuros.tex [13
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.8'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'figure.9'
-<./images/dashboard_1.png><./images/dashboard_2.png>]) (./main.bbl [14])
-<images/diagrama_1.png, id=212, 686.565pt x 664.4825pt>
-File: images/diagrama_1.png Graphic file (type png)
-<use images/diagrama_1.png>
-Package luatex.def Info: images/diagrama_1.png  used on input line 132.
-(luatex.def)             Requested size: 343.28166pt x 332.24043pt.
-
-[15]
-<images/diagrama_2.png, id=218, 908.39375pt x 763.85374pt>
-File: images/diagrama_2.png Graphic file (type png)
-<use images/diagrama_2.png>
-Package luatex.def Info: images/diagrama_2.png  used on input line 140.
-(luatex.def)             Requested size: 454.19577pt x 381.92593pt.
-<images/diagrama_3.png, id=219, 909.3975pt x 741.77126pt>
-File: images/diagrama_3.png Graphic file (type png)
-<use images/diagrama_3.png>
-Package luatex.def Info: images/diagrama_3.png  used on input line 148.
-(luatex.def)             Requested size: 454.69765pt x 370.88472pt.
-<images/diagrama_4.png, id=220, 909.3975pt x 741.77126pt>
-File: images/diagrama_4.png Graphic file (type png)
-<use images/diagrama_4.png>
-Package luatex.def Info: images/diagrama_4.png  used on input line 156.
-(luatex.def)             Requested size: 454.69765pt x 370.88472pt.
-<images/diagrama_5.png, id=221, 958.58125pt x 657.45625pt>
-File: images/diagrama_5.png Graphic file (type png)
-<use images/diagrama_5.png>
-Package luatex.def Info: images/diagrama_5.png  used on input line 164.
-(luatex.def)             Requested size: 479.28946pt x 328.72733pt.
- [16<./images/diagrama_1.png><./images/diagrama_2.png>] [17<./images/diagrama_3.
-png>] [18<./images/diagrama_4.png><./images/diagrama_5.png>] (./main.aux)
+<./images/smoothing_analysis.png>]) [13] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7C894558FAE2D9AEDDC0B1A4CA4FD58D;1357.
+(rerunfilecheck)             Checksum: 0A4F345D8D4960AB613A41CECA92A460;1712.
 )
 
 Here is how much of LuaTeX's memory you used:
- 30495 strings out of 476081
+ 30408 strings out of 476081
  100000,1373583 words of node,token memory allocated
  610 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 14 attribute, 65 glue_spec
 , 9 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 2:2374,3:345,4:204,5:830,6:100,7:8599,8:67,9:436,10:27,11:1113
- 51986 multiletter control sequences out of 65536+600000
+   avail lists: 2:2374,3:345,4:204,5:829,6:100,7:8845,8:67,9:436,10:27,11:1144
+ 51929 multiletter control sequences out of 65536+600000
  52 fonts using 5796279 bytes
- 99i,9n,104p,1596b,500s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,9n,104p,1629b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-
 italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/te
 xgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/te
@@ -1444,10 +1364,10 @@ public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy10.pfb>
-Output written on main.pdf (19 pages, 5486466 bytes).
+Output written on main.pdf (14 pages, 5143855 bytes).
 
-PDF statistics: 278 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 131072)
- 100 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 240 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 131072)
+ 108 words of extra memory for PDF output out of 10000 (max. 100000000)
 

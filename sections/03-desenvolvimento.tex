@@ -1,7 +1,7 @@
 \section{Desenvolvimento}
 \label{sec:metodologia}
 
-A presente seção descreve de forma sistemática os processos realizados e os esforços empreendidos com vistas ao alcance dos objetivos previamente estabelecidos. Para assegurar a clareza da exposição e preservar o contexto de cada etapa do trabalho, o conteúdo foi organizado nas Subseções \ref{subsec:evolve_count_people} e \ref{subsec:data_analysis}, de modo a facilitar a compreensão do leitor.
+A presente seção ambiciona descrever de forma lógica e cronológica todas as etapas realizadas durante o processo de evolução do módulo de contagem de pessoas. Para assegurar a clareza e exposição das informações, bem como preservar o contexto e particularidade de cada etapa do trabalho, o conteúdo foi organizado em subseções de acordo com cada procedimento. A subseção \ref{subsec:existent_module_and_limitations} consiste na explanação acerca do módulo existente com ênfase em suas limitações e problemáticas, mas sem explicar de forma detalhada suas causas. Esta explicação mais aprofundada consta na subseção \ref{subsec:exploratory_data_analysis}, em que é realizado a análise de um conjunto de dados coletados apenas para testes. Posteriormente, é apresentado a evolução do módulo de forma lógica e concisa através da subseção \ref{subsec:module_evolution}, tendo ênfase na resolução dos problemas apresentados anteriormente. Por fim, a subseção \ref{subsec:module_implementation} consiste na descrição do processo de implementação da estratégia proposta no sistema SAFE/UFRJ. 
 
 \subsection{Módulo Existente e suas Limitações}
 \label{subsec:existent_module_and_limitations}
@@ -161,71 +161,28 @@ Outro problema a ser analisado, consiste na dificuldade em identificar eventos d
 \subsection{Evolução do Módulo e Estratégia de Contagem}
 \label{subsec:module_evolution}
 
+As etapas descritas anteriormente foram imprescindíveis, para delinear pontos fracos acerca do módulo de contagem de pessoas existente e através da visualização e análise dos dados, compreender como este componente do sistema pode ser melhorado. Sendo assim, a presente subseção pretende apresentar uma sequência de etapas que compões a nova estratégia utilizada para contagem de indivíduos pelo sistema, que tem como principal objetivo suprir as necessidades destacadas anteriormente, como lidar de melhor forma com a interferência entre os sensores e identificar possíveis eventos de interesse com mais assertividade.
+
+\begin{figure}[H]
+    \center
+	\fbox{\includegraphics[scale=0.22]{images/strategy_workflow.png}}
+    \caption{Fluxo de procedimentos para contagem de pessoas}
+    \label{fig:strategy_workflow}
+\end{figure}
+
+A Figura \ref{fig:strategy_workflow} apresenta de forma sucinta, o fluxo de etapas que compõem o processo de contagem de indivíduos pelo sistema. Em contraste ao Algoritmo \ref{alg:people_counting} pode-se observar a adoção de duas novas etapas de pré-processamento, agregar medidas e suavizar dados coletados. Além disso, a discretização por meio da criação de estados de ativação(ativo/inativo) foi mantida, no entanto a estratégia para obtenção do limite de binarização foi evoluída, para que esse valor seja obtido de forma dinâmica para cada evento detectado pelo sistema.
+
+O processo de identificar uma sequência de dados que podem conter um evento de interesse, pode ser uma tarefa bem difícil como destacado em parágrafos anteriores, mais especificamente delimitar seu início e fim, tendo em vista que devido a interferência causada entre os sensores, variações abruptas nos dados coletados podem ocorrer, assim como apresentado na Figura \ref{fig:noise_analysis}. Para lidar com este tipo de comportamento, foi adicionado a etapa de agregação de medidas, que consiste apenas na soma das leituras realizadas pelo sensor externo e interno, gerando um novo tipo de informação, que é utilizado para identificar medidas que correspondem há um evento de interesse. A lógica para seu uso é muito simples, durante períodos de inatividade, isto é, que não há nenhum indivíduo entrando ou saindo da instalação, a soma das leituras deve estar compreendida em um intervalo fixo e não deve variar muito. O motivo para este comportamento consiste no fato de que, períodos de inatividade correspondem a observação de eventos estáticos, que por sua natureza estática apresentam dados mais regulares, esta característica pode ser observada através dos pontos azuis presentes na Figura \ref{fig:data_collect}. Deste modo, por exclusão, pode-se concluir que apenas medidas que se encaixam nestes parâmetros podem representar eventos de interesse. Esta abordagem é utilizada para separar e armazenar conjuntos de dados que não necessariamente retratam este tipo de evento, mas que são grandes candidatos para tal.
+
+Mesmo após a identificação de conjuntos de dados que possam conter eventos de interesse, ainda é necessário lidar com problemas causados pela interferência entre sensores. A existência de dados que não correspondem ao evento registrado, pode impedir que o sistema identifique e contabilize uma entrada/saída. Por este motivo, a próxima etapa após a construção destes conjuntos consiste na suavização dos dados coletados, esta abordagem é possível pois o sistema coleta medidas com uma frequência alta, desta forma ao reduzir a resolução do vetor de medidas o comportamento dos dados não é descaracterizado, apenas apresentado de forma mais sútil e com variações suaves, assim como apresentado na Figura \ref{fig:smoothing_analysis}.
+
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{images/smoothing_analysis.png}
+	\caption{Gráficos apresentando dados após suavização por duas técnicas diferentes}
+    \label{fig:smoothing_analysis}
+\end{figure}
 %% Fim da seção de abordagem proposta
 
-Os trabalhos desenvolvidos partem do contexto já existente do projeto, tendo em vista o nível de maturidade do sistema, bem como todas as decisões arquiteturais anteriores. Sendo assim, esta seção compreende as melhorias implementadas acerca do projeto já proposto, o qual é apresentado na Figura 1.
 
-\newpage
-
-\begin{figure}[ht]
-    \center
-    \includegraphics[scale=0.3]{images/arq_safe.png}
-    \caption{Esquemático simplificado do projeto SAFE-UFRJ.}
-    \label{fig:arq_safe}
-\end{figure}
-
-O sistema existente, é constituído por um dispositivo IoT que realiza as medições acerca do ambiente e publica as informações via \textit{broker} através do protocolo MQTT(\textit{Message Queuing Telemetry Transport}), a ferramenta utilizada para a comunicação é o RabbitMQ. As especificações do dispositivo, consistem em um ESP32 com FreeRTOS para o escalonamento das tarefas, que faz uso dos sensores CCS811(dióxido de carbono e compostos voláteis), DHT11(temperatura e umidade) e dois HC-SR04(controle do fluxo de pessoas), para realização das medidas.
-
-Ademais, o \textit{backend} consome estes tópicos publicados pelo dispositivo, transforma as informações em dados mais tangíveis ao usuário e os armazena no banco de dados relacional(PostgreSQL), bem como disponibiliza rotas de uma API(\textit{Application Programming Interface}) para o funcionamento da interface de gerenciamento de usuários e instalações do projeto SAFE-UFRJ(\textit{ManagerSAFE}). Foram utilizados respectivamente Typescript e Express para a construção do \textit{backend}, bem como o \textit{dashboard} foi desenvolvido em Javascript.
-
-Assim, um dos primeiros trabalhos desenvolvidos como bolsista consistiu-se na evolução do código do dispositivo de acordo com o diagrama presente no Apêndice A, para garantir melhor sincronicidade entre as tarefas, tendo em vista que para sistemas operacionais em tempo real, como o FreeRTOS, este é um fator crucial para o funcionamento. 
-
-Também, foram implementados classificadores de erro, para identificar medidas que foram realizadas com insucesso ou que aconteceram durante o mau funcionamento de algum componente do dispositivo, comprometendo a medição. Para isto, foram construídos tipos de erro, como o apresentado na Figura ~\ref{fig:ex_erro}, permitindo a distinção entre medições corretas e insucessos.
-
-\newpage
-
-\begin{figure}[ht]
-    \center
-    \includegraphics[scale=0.4]{images/exemplo_erro.png}
-    \caption{Exemplo de tipo de erro.}
-    \label{fig:ex_erro}
-\end{figure}
-
-O tipo de erro é classificado em 64 \textit{bits} e cada casa em sua representação binária equivale a um tipo de erro único. Assim, caso o dispositivo tenha insucesso apenas na coleta de temperatura, o identificador que deve ser inserido na variável de erro é 0000010. Esta checagem é realizada em todas as etapas da medição, bem como na obtenção do registro de horário da coleta, como presente no diagrama do Apêndice A. 
-
-Após isso, a ênfase se voltou para a visualização das informações coletadas. Como apresentado na Figura ~\ref{fig:arq_safe} o \textit{dashboard} coleta informações diretamente do \textit{broker} para apresentá-las ao usuário. No entanto, a exibição das medidas de maneira bruta, assim como são coletadas pelos sensores, não apresenta tanto potencial de tomada de decisão ao usuário.
-
-Desta forma, o próximo trabalho desenvolvido durante a vigência da bolsa PIBIC compreende a implementação de rotas para a API já existente, possibilitando o consumo das medições armazenadas no banco de dados de maneira assíncrona e apresentando informações de maior valor agregado ao usuário via \textit{dashboard}. Nesta etapa, foram desenvolvidas rotas tanto para o consumo das informações à respeito das instalações, bem como a apresentação das medidas relacionadas a cada dispositivo ou instalação, facilitando possíveis testes futuros. 
-
-\begin{figure}[ht]
-    \center
-    \includegraphics[scale=0.4]{images/rotas_api.png}
-    \caption{Recorte das rotas presentes na API.}
-    \label{fig:rotas_api}
-\end{figure}
-
-A Figura ~\ref{fig:rotas_api}, apresenta um recorte da documentação da API contendo as rotas implementadas, sendo elas encarregadas pela listagem de instalações e a listagem de medidas.
-
-Por fim, a última etapa desenvolvida durante este período, abrange a adequação do \textit{dashboard} do sistema para o consumo das rotas desenvolvidas e apresentação das medições. Para isto, foi utilizada a estratégia de \textit{pooling} para o consumo da API, a qual consiste em realizar consultas periódicas para alimentação dos componentes presentes no \textit{dashboard}, logo as informações presentes na interface são atualizadas a cada 15 segundos. 
-
-Desta forma, cada instalação é apresentada como um retângulo, contendo a identificação, localização, medidas de biossegurança e o registro de hora da última medida, assim como apresentado na Figura ~\ref{fig:dashboard_1}.
-
-\begin{figure}[ht]
-    \center
-    \includegraphics[scale=0.25]{images/dashboard_1.png}
-    \caption{Tela de instalações do \textit{dashboard} do sistema.}
-    \label{fig:dashboard_1}
-\end{figure}
-
-As informações apresentadas em cada retângulo, correspondem as medidas coletadas pelo dispositivo presente naquela instalação. Como considera-se que há apenas um dispositivo por sala (instalação), não se faz necessário a adoção de técnicas para unir informações de dois dispositivos. 
-
-Ademais, o usuário pode obter mais informações acerca da instalação desejada apenas selecionando o respectivo retângulo. Para isto, foi implementada a tela de Detalhes da Instalação apresentada na Figura ~\ref{fig:dashboard_2}, a qual apresenta os relatórios de cada propriedade da medição.
-
-\begin{figure}[ht]
-    \center
-    \includegraphics[scale=0.25]{images/dashboard_2.png}
-    \caption{Tela de Detalhes da Instalação.}
-    \label{fig:dashboard_2}
-\end{figure}
-
-Os gráficos presentes nesta tela, apresentam as medições realizadas, bem como o registro de horário de cada medição, permitindo ao usuário observar variações e padrões nos indicadores de cada instalação. As barras verticais presentes nos gráficos, correspondem aos erros de medição descritos anteriormente, caso o dispositivo detecte algum problema durante a realização da medida, o mesmo realiza a publicação do tópico, mas adiciona um tipo de erro ao pacote, bem como altera o valor da medida que foi realizada com insucesso, para um valor fora do escopo de leitura dos sensores e consequentemente invalidando a medida.
+\subsection{Implementação da Estratégia Proposta}
+\label{subsec:module_implementation}
