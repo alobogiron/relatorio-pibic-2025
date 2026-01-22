@@ -229,6 +229,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/algorithms/algorithm.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.lua
@@ -264,6 +267,7 @@ OUTPUT main.out
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT ./sections/title.tex
 INPUT ./images/Marca_Principal.png
 INPUT ./images/Marca_Principal.png
@@ -300,8 +304,12 @@ INPUT ./images/noise_analysis.png
 INPUT ./images/noise_analysis.png
 INPUT ./images/strategy_workflow.png
 INPUT ./images/strategy_workflow.png
-INPUT ./images/smoothing_analysis.png
-INPUT ./images/smoothing_analysis.png
+INPUT ./images/wma_plot.png
+INPUT ./images/wma_plot.png
+INPUT ./images/savgol_plot.png
+INPUT ./images/savgol_plot.png
+INPUT ./images/plot_pre_smooth.png
+INPUT ./images/plot_pre_smooth.png
 INPUT ./sections/04-trab-futuros.tex
 INPUT ./sections/06-consideracoes.tex
 INPUT ./main.bbl

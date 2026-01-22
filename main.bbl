@@ -82,4 +82,12 @@ M.~Komorowski, D.~C. Marshall, J.~D. Salciccioli, and Y.~Crutain,
   Available: \url{https://doi.org/10.1007/978-3-319-43742-2_15}
 \BIBentrySTDinterwordspacing
 
+\bibitem{wang_time_2020}
+\BIBentryALTinterwordspacing
+X.~Wang and C.~Wang, ``\BIBforeignlanguage{en}{Time {Series} {Data} {Cleaning}:
+  {A} {Survey}},'' \emph{\BIBforeignlanguage{en}{IEEE Access}}, vol.~8, pp.
+  1866--1881, 2020. [Online]. Available:
+  \url{https://ieeexplore.ieee.org/document/8943205/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

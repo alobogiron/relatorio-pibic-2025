@@ -5,6 +5,6 @@
 \contentsline {subsection}{\numberline {3.1}Módulo Existente e suas Limitações}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Análise Exploratória dos Dados}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Evolução do Módulo e Estratégia de Contagem}{10}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Implementação da Estratégia Proposta}{12}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Resultados e Discussões}{12}{section.4}%
-\contentsline {section}{\numberline {5}Considerações Finais}{12}{section.5}%
+\contentsline {subsection}{\numberline {3.4}Implementação da Estratégia Proposta}{13}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Resultados e Discussões}{13}{section.4}%
+\contentsline {section}{\numberline {5}Considerações Finais}{13}{section.5}%

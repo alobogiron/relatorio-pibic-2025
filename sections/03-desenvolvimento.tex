@@ -172,15 +172,43 @@ As etapas descritas anteriormente foram imprescindíveis, para delinear pontos f
 
 A Figura \ref{fig:strategy_workflow} apresenta de forma sucinta, o fluxo de etapas que compõem o processo de contagem de indivíduos pelo sistema. Em contraste ao Algoritmo \ref{alg:people_counting} pode-se observar a adoção de duas novas etapas de pré-processamento, agregar medidas e suavizar dados coletados. Além disso, a discretização por meio da criação de estados de ativação(ativo/inativo) foi mantida, no entanto a estratégia para obtenção do limite de binarização foi evoluída, para que esse valor seja obtido de forma dinâmica para cada evento detectado pelo sistema.
 
-O processo de identificar uma sequência de dados que podem conter um evento de interesse, pode ser uma tarefa bem difícil como destacado em parágrafos anteriores, mais especificamente delimitar seu início e fim, tendo em vista que devido a interferência causada entre os sensores, variações abruptas nos dados coletados podem ocorrer, assim como apresentado na Figura \ref{fig:noise_analysis}. Para lidar com este tipo de comportamento, foi adicionado a etapa de agregação de medidas, que consiste apenas na soma das leituras realizadas pelo sensor externo e interno, gerando um novo tipo de informação, que é utilizado para identificar medidas que correspondem há um evento de interesse. A lógica para seu uso é muito simples, durante períodos de inatividade, isto é, que não há nenhum indivíduo entrando ou saindo da instalação, a soma das leituras deve estar compreendida em um intervalo fixo e não deve variar muito. O motivo para este comportamento consiste no fato de que, períodos de inatividade correspondem a observação de eventos estáticos, que por sua natureza estática apresentam dados mais regulares, esta característica pode ser observada através dos pontos azuis presentes na Figura \ref{fig:data_collect}. Deste modo, por exclusão, pode-se concluir que apenas medidas que se encaixam nestes parâmetros podem representar eventos de interesse. Esta abordagem é utilizada para separar e armazenar conjuntos de dados que não necessariamente retratam este tipo de evento, mas que são grandes candidatos para tal.
+O processo de identificar uma sequência de dados que podem conter um evento de interesse, pode ser uma tarefa bem difícil como destacado em parágrafos anteriores, mais especificamente delimitar seu início e fim, tendo em vista que devido a interferência causada entre os sensores, variações abruptas nos dados coletados podem ocorrer, assim como apresentado na Figura \ref{fig:noise_analysis}. Para lidar com este tipo de comportamento, foi adicionado a etapa de agregação de medidas, que consiste apenas na soma das leituras realizadas pelo sensor externo e interno, gerando um novo tipo de informação, que é utilizado para identificar medidas que correspondem há um evento de interesse. A lógica para seu uso é muito simples, durante períodos de inatividade, isto é, que não há nenhum indivíduo entrando ou saindo da instalação, a soma das leituras deve estar compreendida em um intervalo fixo e não deve variar muito. O motivo para este comportamento consiste no fato de que, períodos de inatividade correspondem a observação de eventos estáticos, que por sua natureza  apresentam dados mais regulares, esta característica pode ser observada através dos pontos azuis presentes na Figura \ref{fig:data_collect}. Deste modo, por exclusão, pode-se concluir que apenas medidas que se encaixam nestes parâmetros podem representar eventos de interesse. Esta abordagem é utilizada para separar e armazenar conjuntos de dados que não necessariamente retratam este tipo de evento, mas que são grandes candidatos para tal.
 
 Mesmo após a identificação de conjuntos de dados que possam conter eventos de interesse, ainda é necessário lidar com problemas causados pela interferência entre sensores. A existência de dados que não correspondem ao evento registrado, pode impedir que o sistema identifique e contabilize uma entrada/saída. Por este motivo, a próxima etapa após a construção destes conjuntos consiste na suavização dos dados coletados, esta abordagem é possível pois o sistema coleta medidas com uma frequência alta, desta forma ao reduzir a resolução do vetor de medidas o comportamento dos dados não é descaracterizado, apenas apresentado de forma mais sútil e com variações suaves, assim como apresentado na Figura \ref{fig:smoothing_analysis}.
 
 \begin{figure}[H]
-    \includegraphics[width=\linewidth]{images/smoothing_analysis.png}
-	\caption{Gráficos apresentando dados após suavização por duas técnicas diferentes}
+    \centering
+
+    % --- Primeira linha ---
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+	    \fbox{\includegraphics[width=\textwidth]{images/wma_plot.png}}
+        \caption{Suavização utilizando Médias Móveis com Peso}
+        \label{fig:wma_smooth}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+	    \fbox{\includegraphics[width=\textwidth]{images/savgol_plot.png}}
+        \caption{Suavização utilizando Savitzky-Golay}
+        \label{fig:savgol_smooth}
+    \end{subfigure}
+
+    \vspace{0.4cm}
+
+    % --- Segunda linha ---
+    \begin{subfigure}[b]{0.9\textwidth}
+        \centering
+	    \fbox{\includegraphics[width=\textwidth]{images/plot_pre_smooth.png}}
+        \caption{Comparação geral das medições ao longo do tempo}
+        \label{fig:pre_smooth}
+    \end{subfigure}
+
+    \caption{Comparação entre técnicas de suavização de dados aplicadas às medições dos sensores ultrassônicos.}
     \label{fig:smoothing_analysis}
 \end{figure}
+
+A Figura \ref{fig:smoothing_analysis} apresenta duas técnicas muito comuns para suaviação de dados que possuem interferência/ruído e também atenuação de sinal. Neste contexto, a \ref{fig:wma_smooth} corresponde ao emprego de um algoritmo de Média Móveis com Peso (Weighted Moving Average - WMA), uma estratégia simples que consiste na ideia de quão maior a distância entre dois pontos, menor a influência entre eles \cite{wang_time_2020}. A equação X apresenta a definição para este tipo de abordagem, neste contexto $\omega_i$ corresponde ao peso/influência da informação presente na posição $i$ acerca do dado contido na posição $t$. Através da Figura \ref{fig:smoothing_analysis}, pode-se observar que esta abordagem gera uma série temporal livre de comportamentos abruptos
 %% Fim da seção de abordagem proposta
 
 
