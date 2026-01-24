@@ -23,13 +23,15 @@
 \newlabel{sec:metodologia}{{3}{4}{Desenvolvimento}{section.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Módulo Existente e suas Limitações}{4}{subsection.3.1}\protected@file@percent }
 \newlabel{subsec:existent_module_and_limitations}{{3.1}{4}{Módulo Existente e suas Limitações}{subsection.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Módulo de Sensoriamento para Contagem de Pessoas.}}{5}{figure.caption.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Módulo de Sensoriamento para Contagem de Pessoas}}{5}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:count_people_module}{{1}{5}{Módulo de Sensoriamento para Contagem de Pessoas}{figure.caption.1}{}}
+\citation{Komorowski2016}
 \@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Lógica Inicial Para Contagem de Pessoas}}{6}{algorithm.1}\protected@file@percent }
 \newlabel{alg:people_counting}{{1}{6}{Lógica Inicial Para Contagem de Pessoas}{algorithm.1}{}}
 \citation{Komorowski2016}
 \citation{Komorowski2016}
+\citation{wohlin2012experimentation}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Análise Exploratória dos Dados}{7}{subsection.3.2}\protected@file@percent }
 \newlabel{subsec:exploratory_data_analysis}{{3.2}{7}{Análise Exploratória dos Dados}{subsection.3.2}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Roteiro de Eventos para Etapa de Coleta de Dados}}{7}{table.caption.2}\protected@file@percent }
@@ -39,24 +41,42 @@
 \newlabel{fig:data_collect}{{2}{8}{Registros de vídeo realizados durante a coleta de dados}{figure.caption.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Visualização gráfica de um evento de entrada}}{8}{figure.caption.4}\protected@file@percent }
 \newlabel{fig:data_visualization}{{3}{8}{Visualização gráfica de um evento de entrada}{figure.caption.4}{}}
+\newlabel{fig:noise_analysis_01}{{4a}{9}{Intervalo de 0,1 segundos}{figure.caption.5}{}}
+\newlabel{sub@fig:noise_analysis_01}{{a}{9}{Intervalo de 0,1 segundos}{figure.caption.5}{}}
+\newlabel{fig:noise_analysis_005}{{4b}{9}{Intervalo de 0,05 segundos}{figure.caption.5}{}}
+\newlabel{sub@fig:noise_analysis_005}{{b}{9}{Intervalo de 0,05 segundos}{figure.caption.5}{}}
+\newlabel{fig:noise_analysis_001}{{4c}{9}{Intervalo de 0,01 segundos}{figure.caption.5}{}}
+\newlabel{sub@fig:noise_analysis_001}{{c}{9}{Intervalo de 0,01 segundos}{figure.caption.5}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Coleta de dados realizadas com intervalos de medição diferentes}}{9}{figure.caption.5}\protected@file@percent }
 \newlabel{fig:noise_analysis}{{4}{9}{Coleta de dados realizadas com intervalos de medição diferentes}{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Evolução do Módulo e Estratégia de Contagem}{10}{subsection.3.3}\protected@file@percent }
 \newlabel{subsec:module_evolution}{{3.3}{10}{Evolução do Módulo e Estratégia de Contagem}{subsection.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Fluxo de procedimentos para contagem de pessoas}}{10}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:strategy_workflow}{{5}{10}{Fluxo de procedimentos para contagem de pessoas}{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Fluxo de procedimentos para contagem de pessoas}}{11}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:strategy_workflow}{{5}{11}{Fluxo de procedimentos para contagem de pessoas}{figure.caption.6}{}}
 \citation{wang_time_2020}
-\bibstyle{IEEEtran}
-\bibdata{referencias.bib}
-\bibcite{WHO2014MultipleExposure}{1}
 \newlabel{fig:wma_smooth}{{6a}{12}{Suavização utilizando Médias Móveis com Peso}{figure.caption.7}{}}
 \newlabel{sub@fig:wma_smooth}{{a}{12}{Suavização utilizando Médias Móveis com Peso}{figure.caption.7}{}}
 \newlabel{fig:savgol_smooth}{{6b}{12}{Suavização utilizando Savitzky-Golay}{figure.caption.7}{}}
 \newlabel{sub@fig:savgol_smooth}{{b}{12}{Suavização utilizando Savitzky-Golay}{figure.caption.7}{}}
-\newlabel{fig:pre_smooth}{{6c}{12}{Comparação geral das medições ao longo do tempo}{figure.caption.7}{}}
-\newlabel{sub@fig:pre_smooth}{{c}{12}{Comparação geral das medições ao longo do tempo}{figure.caption.7}{}}
+\newlabel{fig:pre_smooth}{{6c}{12}{Apresentação dos dados sem suavização das amostras}{figure.caption.7}{}}
+\newlabel{sub@fig:pre_smooth}{{c}{12}{Apresentação dos dados sem suavização das amostras}{figure.caption.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Comparação entre técnicas de suavização de dados aplicadas às medições dos sensores ultrassônicos.}}{12}{figure.caption.7}\protected@file@percent }
 \newlabel{fig:smoothing_analysis}{{6}{12}{Comparação entre técnicas de suavização de dados aplicadas às medições dos sensores ultrassônicos}{figure.caption.7}{}}
+\newlabel{eq:wma}{{1}{12}{Evolução do Módulo e Estratégia de Contagem}{equation.1}{}}
+\citation{schafer_what_2011}
+\newlabel{eq:erro_sg}{{2}{13}{Evolução do Módulo e Estratégia de Contagem}{equation.2}{}}
+\newlabel{eq:media_geral_compacta}{{3}{13}{Evolução do Módulo e Estratégia de Contagem}{equation.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Transição de Estados do Módulo de Contagem de Pessoas}}{14}{table.caption.8}\protected@file@percent }
+\newlabel{tab:state_machine}{{2}{14}{Transição de Estados do Módulo de Contagem de Pessoas}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Resultados e Discussões}{14}{section.4}\protected@file@percent }
+\newlabel{sec:resultados}{{4}{14}{Resultados e Discussões}{section.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Caracterização de Eventos de Interesse com Abordagem Original e Proposta}}{15}{table.caption.9}\protected@file@percent }
+\newlabel{tab:experiment_results}{{3}{15}{Caracterização de Eventos de Interesse com Abordagem Original e Proposta}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Considerações Finais}{15}{section.5}\protected@file@percent }
+\newlabel{sec:consideracoes}{{5}{15}{Considerações Finais}{section.5}{}}
+\bibstyle{IEEEtran}
+\bibdata{referencias.bib}
+\bibcite{WHO2014MultipleExposure}{1}
 \bibcite{SAFE-IOT}{2}
 \bibcite{kelly2020internet}{3}
 \bibcite{MoniPaEp}{4}
@@ -64,11 +84,7 @@
 \bibcite{UFRJBiosseguranca2020}{6}
 \bibcite{rios2022exploring}{7}
 \bibcite{Komorowski2016}{8}
-\bibcite{wang_time_2020}{9}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Implementação da Estratégia Proposta}{13}{subsection.3.4}\protected@file@percent }
-\newlabel{subsec:module_implementation}{{3.4}{13}{Implementação da Estratégia Proposta}{subsection.3.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Resultados e Discussões}{13}{section.4}\protected@file@percent }
-\newlabel{sec:resultados}{{4}{13}{Resultados e Discussões}{section.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Considerações Finais}{13}{section.5}\protected@file@percent }
-\newlabel{sec:consideracoes}{{5}{13}{Considerações Finais}{section.5}{}}
-\gdef \@abspage@last{14}
+\bibcite{wohlin2012experimentation}{9}
+\bibcite{wang_time_2020}{10}
+\bibcite{schafer_what_2011}{11}
+\gdef \@abspage@last{18}

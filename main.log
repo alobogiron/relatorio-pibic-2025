@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  22 JAN 2026 14:14
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  23 JAN 2026 17:44
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1302,7 +1302,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./sections/title.tex
-<images/Marca_Principal.png, id=43, 845.0772pt x 597.432pt>
+<images/Marca_Principal.png, id=39, 845.0772pt x 597.432pt>
 File: images/Marca_Principal.png Graphic file (type png)
 <use images/Marca_Principal.png>
 Package luatex.def Info: images/Marca_Principal.png  used on input line 5.
@@ -1310,16 +1310,16 @@ Package luatex.def Info: images/Marca_Principal.png  used on input line 5.
  [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./images/
-Marca_Principal.png>]) (./sections/00-resumo.tex)
+Marca_Principal.png>]) (./sections/00-resumo.tex<<oml.cmap>><<oms.cmap>><<omx.cm
+ap>><<ot1.cmap>>)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
-[1] (./main.toc<<oml.cmap>><<oms.cmap>><<omx.cmap>><<ot1.cmap>>)
+[1] (./main.toc)
 \tf@toc=\write5
 
 \openout5 = main.toc
-
-(./sections/01-introducao.tex [2] [3]) (./sections/02-objetivos.tex)
-(./sections/03-desenvolvimento.tex
-<images/count_people_module.png, id=100, 1139.25626pt x 869.2475pt>
+ (./sections/01-introducao.tex [2] [3])
+(./sections/02-objetivos.tex) (./sections/03-desenvolvimento.tex
+<images/count_people_module.png, id=96, 1139.25626pt x 869.2475pt>
 File: images/count_people_module.png Graphic file (type png)
 <use images/count_people_module.png>
 Package luatex.def Info: images/count_people_module.png  used on input line 15.
@@ -1328,103 +1328,135 @@ Package luatex.def Info: images/count_people_module.png  used on input line 15.
  [4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 30.
- [5<./images/count_people_module.png>]
-[6] [7]
-<images/data_collect.png, id=138, 1722.435pt x 886.31125pt>
+ [5<./images/count_people_module.png>] [6] [7]
+<images/data_collect.png, id=135, 1722.435pt x 886.31125pt>
 File: images/data_collect.png Graphic file (type png)
 <use images/data_collect.png>
 Package luatex.def Info: images/data_collect.png  used on input line 130.
 (luatex.def)             Requested size: 430.6077pt x 221.57727pt.
-<images/datapoints_visualization.png, id=142, 1891.065pt x 1010.77625pt>
+<images/datapoints_visualization.png, id=139, 1891.065pt x 1010.77625pt>
 File: images/datapoints_visualization.png Graphic file (type png)
 <use images/datapoints_visualization.png>
 Package luatex.def Info: images/datapoints_visualization.png  used on input lin
 e 140.
 (luatex.def)             Requested size: 416.03558pt x 222.37146pt.
  [8<./images/data_collect.png><./images/datapoints_visualization.png>]
-<images/noise_analysis.png, id=153, 1923.185pt x 990.70125pt>
-File: images/noise_analysis.png Graphic file (type png)
-<use images/noise_analysis.png>
-Package luatex.def Info: images/noise_analysis.png  used on input line 150.
-(luatex.def)             Requested size: 483.69687pt x 249.17126pt.
+<images/noise_freq_01.png, id=150, 1149.093pt x 570.933pt>
+File: images/noise_freq_01.png Graphic file (type png)
+<use images/noise_freq_01.png>
+Package luatex.def Info: images/noise_freq_01.png  used on input line 155.
+(luatex.def)             Requested size: 232.17242pt x 115.35194pt.
 
-[9<./images/noise_analysis.png>]
-<images/strategy_workflow.png, id=165, 1728.4575pt x 818.05624pt>
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 155--156
+ [][] 
+ []
+
+<images/noise_freq_005.png, id=151, 1149.093pt x 570.933pt>
+File: images/noise_freq_005.png Graphic file (type png)
+<use images/noise_freq_005.png>
+Package luatex.def Info: images/noise_freq_005.png  used on input line 162.
+(luatex.def)             Requested size: 232.17242pt x 115.35194pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 162--163
+ [][] 
+ []
+
+<images/noise_freq_001.png, id=152, 1149.093pt x 570.933pt>
+File: images/noise_freq_001.png Graphic file (type png)
+<use images/noise_freq_001.png>
+Package luatex.def Info: images/noise_freq_001.png  used on input line 172.
+(luatex.def)             Requested size: 232.17242pt x 115.35194pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 172--173
+ [][] 
+ []
+
+[9<./images/noise_freq_01.png><./images/noise_freq_005.png><./images/noise_freq_
+001.png>]
+<images/strategy_workflow.png, id=166, 1728.4575pt x 818.05624pt>
 File: images/strategy_workflow.png Graphic file (type png)
 <use images/strategy_workflow.png>
-Package luatex.def Info: images/strategy_workflow.png  used on input line 168.
+Package luatex.def Info: images/strategy_workflow.png  used on input line 195.
 (luatex.def)             Requested size: 380.26183pt x 179.97293pt.
- [10<./images/strategy_workflow.png>]
-<images/wma_plot.png, id=179, 964.0818pt x 528.2937pt>
+ [10]
+<images/wma_plot.png, id=178, 964.0818pt x 528.2937pt>
 File: images/wma_plot.png Graphic file (type png)
 <use images/wma_plot.png>
-Package luatex.def Info: images/wma_plot.png  used on input line 185.
+Package luatex.def Info: images/wma_plot.png  used on input line 212.
 (luatex.def)             Requested size: 232.17242pt x 127.2203pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 185--186
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 212--213
  [][] 
  []
 
-<images/savgol_plot.png, id=180, 964.0818pt x 528.2937pt>
+<images/savgol_plot.png, id=179, 964.0818pt x 528.2937pt>
 File: images/savgol_plot.png Graphic file (type png)
 <use images/savgol_plot.png>
-Package luatex.def Info: images/savgol_plot.png  used on input line 192.
+Package luatex.def Info: images/savgol_plot.png  used on input line 219.
 (luatex.def)             Requested size: 232.17242pt x 127.2203pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 192--193
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 219--220
  [][] 
  []
 
-<images/plot_pre_smooth.png, id=181, 1149.093pt x 570.2103pt>
+<images/plot_pre_smooth.png, id=180, 1149.093pt x 570.2103pt>
 File: images/plot_pre_smooth.png Graphic file (type png)
 <use images/plot_pre_smooth.png>
-Package luatex.def Info: images/plot_pre_smooth.png  used on input line 202.
+Package luatex.def Info: images/plot_pre_smooth.png  used on input line 229.
 (luatex.def)             Requested size: 435.32422pt x 216.0209pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 202--203
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 229--230
  [][] 
  []
 
-[11]) (./sections/04-trab-futuros.tex) (./sections/06-consideracoes.tex)
-(./main.bbl [12<./images/wma_plot.png><./images/savgol_plot.png><./images/plot_p
-re_smooth.png>]
+[11<./images/strategy_workflow.png>] [12<./images/wma_plot.png><./images/savgol_
+plot.png><./images/plot_pre_smooth.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 274.
+
+) (./sections/04-trab-futuros.tex [13] [14]) (./sections/06-consideracoes.tex
+[15]) (./main.bbl [16]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-) [13] (./main.aux)
+) [17] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0A4F345D8D4960AB613A41CECA92A460;1712.
+(rerunfilecheck)             Checksum: D0E6D0ECC17488843E74A4D9F5DD3C74;1457.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31895 strings out of 476081
+ 31956 strings out of 476081
  100000,1373583 words of node,token memory allocated
- 610 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 14 attribute, 65 glue_spec
-, 9 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 2:2437,3:355,4:208,5:829,6:102,7:8845,8:67,9:446,10:27,11:1144
- 53389 multiletter control sequences out of 65536+600000
- 52 fonts using 5796279 bytes
- 99i,10n,128p,1620b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 646 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 26 attribute, 65 glue_spec
+, 15 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 2:2419,3:356,4:208,5:901,6:103,7:9406,8:67,9:686,10:27,11:1133
+ 53422 multiletter control sequences out of 65536+600000
+ 66 fonts using 6891375 bytes
+ 99i,16n,128p,1604b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-
 italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/te
 xgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/te
 x-gyre/texgyreheros-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb>
-Output written on main.pdf (14 pages, 5298017 bytes).
+public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb>
+Output written on main.pdf (18 pages, 5402968 bytes).
 
-PDF statistics: 250 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 131072)
- 108 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 303 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 131072)
+ 100 words of extra memory for PDF output out of 10000 (max. 100000000)
 
