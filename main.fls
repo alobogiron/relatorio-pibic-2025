@@ -326,6 +326,12 @@ INPUT ./images/savgol_plot.png
 INPUT ./images/savgol_plot.png
 INPUT ./images/plot_pre_smooth.png
 INPUT ./images/plot_pre_smooth.png
+INPUT ./images/plot_event_ex.png
+INPUT ./images/plot_event_ex.png
+INPUT ./images/smoothing_ex.png
+INPUT ./images/smoothing_ex.png
+INPUT ./images/binarization_ex.png
+INPUT ./images/binarization_ex.png
 INPUT ./sections/04-trab-futuros.tex
 INPUT ./sections/06-consideracoes.tex
 INPUT ./main.bbl

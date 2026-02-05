@@ -61,7 +61,7 @@ A.~B.~d. Oliveira \emph{et~al.}, \emph{Hospitais seguros e resilientes:
 \bibitem{UFRJBiosseguranca2020}
 UFRJ, ``Guia de ações de biossegurança para resposta à pandemia pela
   covid-19 no Âmbito da ufrj,'' Universidade Federal do Rio de Janeiro, Rio de
-  Janeiro, Relatório técnico, 10 2020, disponível em:
+  Janeiro, Relatório técnico, 2020, disponível em:
   https://portal.nce.ufrj.br/images/documentos/retornopresencial/guia-de-biosseguranca-ufrj.pdf.
   Acesso em: 10/07/24.
 
@@ -86,6 +86,13 @@ M.~Komorowski, D.~C. Marshall, J.~D. Salciccioli, and Y.~Crutain,
 C.~Wohlin, P.~Runeson, M.~H{\"o}st, M.~C. Ohlsson, B.~Regnell, A.~Wessl{\'e}n
   \emph{et~al.}, \emph{Experimentation in software engineering}.\hskip 1em plus
   0.5em minus 0.4em\relax Springer, 2012, vol. 236.
+
+\bibitem{hcsr04}
+\BIBentryALTinterwordspacing
+{Cytron Technologies Sdn. Bhd.}, \emph{{HC-SR04} Ultrasonic Sensor User's
+  Manual}, 1st~ed., 2013. [Online]. Available:
+  \url{https://cdn.awsli.com.br/945/945993/arquivos/HCSR04.pdf}
+\BIBentrySTDinterwordspacing
 
 \bibitem{wang_time_2020}
 \BIBentryALTinterwordspacing
