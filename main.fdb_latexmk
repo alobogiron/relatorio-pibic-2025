@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1770255058.47279 "main.aux" "main.bbl" "main" 1770255063.13525 0
+["bibtex main"] 1770598934.09351 "main.aux" "main.bbl" "main" 1770600554.23586 0
   "./referencias.bib" 1770250686.08825 5232 ca6ebaed1367cdff57dfeab980200088 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1770255062.63679 8597 83d1a9db241ddfd8241c820d11fa80cb "lualatex"
+  "main.aux" 1770600553.73558 8618 02b27e25490cbc1acd53ee374a12eef1 "lualatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1770255058.60142 "main.tex" "main.pdf" "main" 1770255063.13548 0
+["lualatex"] 1770600549.75148 "main.tex" "main.pdf" "main" 1770600554.23607 0
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1767792938.92949 128410 3f752579a721aabb697cb5411c2b5223 ""
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1767792938.36547 127327 1c39dfa079191ba7430719f0296074a7 ""
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/texgyreheros-bold.luc" 1767793351.06937 212910 f726f43417a20934952b281c15496d58 ""
@@ -293,17 +293,17 @@
   "images/smoothing_ex.png" 1770125215.65023 133476 8575821d1ed24892c78c3b7821bac64e ""
   "images/strategy_workflow.png" 1768990344.90725 205837 a4254007167865986a44393c6a21b883 ""
   "images/wma_plot.png" 1769092450.2652 92183 b1cd515c44b26752f45c7c0d60b9c5e8 ""
-  "main.aux" 1770255062.63679 8597 83d1a9db241ddfd8241c820d11fa80cb "lualatex"
-  "main.bbl" 1770255058.58874 4953 da5ebcb73517b42a2e209fe574856923 "bibtex main"
-  "main.out" 1770255062.63679 1695 30989633f0b5ec71727bd8167113a3f2 "lualatex"
-  "main.tex" 1770250491.61782 3379 a40449a777c4005482a3e777857c0717 ""
-  "main.toc" 1770255062.63679 822 2aa2c3f84f08ee05c4ebffc8fc3f99d1 "lualatex"
+  "main.aux" 1770600553.73558 8618 02b27e25490cbc1acd53ee374a12eef1 "lualatex"
+  "main.bbl" 1770598934.20898 4953 da5ebcb73517b42a2e209fe574856923 "bibtex main"
+  "main.out" 1770600553.73958 1695 30989633f0b5ec71727bd8167113a3f2 "lualatex"
+  "main.tex" 1770598906.66786 3403 3b90bddad87515d9e43cc4d6a947f992 ""
+  "main.toc" 1770600553.73958 851 18ce2f2fcfce19f230be98cb76b7d2cf "lualatex"
   "sections/00-resumo.tex" 1769199463.75543 1111 67df7841dd48aabb5496edb563373ee3 ""
   "sections/01-introducao.tex" 1769198944.90456 4155 dea60169969cf4ad139fab025461fd9a ""
   "sections/02-objetivos.tex" 1769198851.30975 381 df4a96a9678964a7f7f1d2c1c5b03e21 ""
-  "sections/03-desenvolvimento.tex" 1770255053.77669 32689 2772a28e8a1131693b5f6f5fb736d628 ""
+  "sections/03-desenvolvimento.tex" 1770600265.82362 32688 db01e919c401be18e080fb910ca9090a ""
   "sections/04-trab-futuros.tex" 1769200451.99443 6901 85ac6b27c84c21c5aa2bb6466dcc1f4a ""
-  "sections/06-consideracoes.tex" 1769197712.91448 2152 49fef45664ba5abc3bf5ebdc36d129c5 ""
+  "sections/06-consideracoes.tex" 1770600548.37135 2152 03d64326664a5ea51222b435f18fd414 ""
   "sections/title.tex" 1769262145.21892 994 1aa61ca609882e8f5cbc07938f24155f ""
   (generated)
   "main.aux"
