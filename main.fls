@@ -232,6 +232,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.lua
@@ -332,6 +333,8 @@ INPUT ./images/smoothing_ex.png
 INPUT ./images/smoothing_ex.png
 INPUT ./images/binarization_ex.png
 INPUT ./images/binarization_ex.png
+INPUT ./images/fluxograma_coleta_medidas_hcsr04.png
+INPUT ./images/fluxograma_coleta_medidas_hcsr04.png
 INPUT ./sections/04-trab-futuros.tex
 INPUT ./sections/06-consideracoes.tex
 INPUT ./main.bbl

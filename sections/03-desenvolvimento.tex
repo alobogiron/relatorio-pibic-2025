@@ -138,48 +138,48 @@ Para a etapa de construção das visualizações gráficas, empregou-se predomin
 \begin{figure}[ht]
     \center
 	\fbox{\includegraphics[scale=0.22]{images/datapoints_visualization.png}}
-    \caption{Visualização gráfica de um evento de entrada}
-    \label{fig:data_visualization}
+	\caption{Visualização gráfica de um evento de entrada}
+	\label{fig:data_visualization}
 \end{figure}
 
 A etapa de análise visual dos gráficos apresentou dois padrões de \textit{outliers}, valores superiores a distância total entre os sensores ultrassônicos e o piso, isto é, registros que deveriam ser impossíveis de serem coletados e valores nulos. O primeiro padrão pode ser justificado devido a interferência entre os dois sensores. Já a ocorrência de valores nulos acontece quando o sensor não consegue captar a onda enviada, isto pode acontecer quando um objeto ou indivíduo impede a propagação da onda, e também caso a onda não seja captada pelo receptor, mais comum em objetos com faces irregulares, pois a onda pode ser refletida em direções que não são paralelas ao seu vetor deslocamento inicial, dificultando sua recepção pelo sensor que apenas consegue captar informações em uma região cônica de aproximadamente 45 graus \cite{hcsr04}. Além disso, compreende-se que um dos motivos de mal funcionamento do Algoritmo \ref{alg:people_counting} corresponde a ausência de abordagens para lidar com comportamentos irregulares advindos da natureza do sensor utilizado e da estratégia de coleta.
 
-A propagação da onda por trajetórias indesejadas é um problema de difícil resolução, tendo em vista que o indivíduo encontra-se em movimento e pode ser interceptado por ela por diversas ângulos. No entanto, existem diversos ajustes que podem ser realizados para melhorar a qualidade do evento capturado pelo módulo de sensoriamento e oferecer um evento mais caracterizado ao sistema. Deste modo, foram realizados testes para identificar customizações de caráter lógico e físico, que refinassem a coleta de informações, culminando na obtenção de padrões mais constantes e livres de irregularidades. 
+A propagação da onda por trajetórias indesejadas é um problema de difícil resolução, tendo em vista que o indivíduo encontra-se em movimento e pode ser interceptado por ela por diversas ângulos. No entanto, existem diversos ajustes que podem ser realizados para melhorar a qualidade do evento capturado pelo módulo de sensoriamento e oferecer um evento melhor caracterizado ao sistema. Deste modo, foram realizados testes para identificar customizações de caráter lógico e físico, que refinassem a coleta de informações, culminando na obtenção de padrões mais constantes e livres de irregularidades. 
 
 \begin{figure}[H]
-    \centering
+	\centering
 
-    % --- Primeira linha ---
-    \begin{subfigure}[b]{0.48\textwidth}
-        \centering
-	    \fbox{\includegraphics[width=\textwidth]{images/noise_freq_01.png}}
-        \caption{Intervalo de 0,1 segundos}
-        \label{fig:noise_analysis_01}
-    \end{subfigure}
-    \hfill
-    \begin{subfigure}[b]{0.48\textwidth}
-        \centering
-	    \fbox{\includegraphics[width=\textwidth]{images/noise_freq_005.png}}
-        \caption{Intervalo de 0,05 segundos}
-        \label{fig:noise_analysis_005}
-    \end{subfigure}
+	% --- Primeira linha ---
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\fbox{\includegraphics[width=\textwidth]{images/noise_freq_01.png}}
+		\caption{Intervalo de 0,1 segundos}
+		\label{fig:noise_analysis_01}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\fbox{\includegraphics[width=\textwidth]{images/noise_freq_005.png}}
+		\caption{Intervalo de 0,05 segundos}
+		\label{fig:noise_analysis_005}
+	\end{subfigure}
 
-    \vspace{0.4cm}
+	\vspace{0.4cm}
 
-    % --- Segunda linha ---
-    \begin{subfigure}[b]{0.48\textwidth}
-        \centering
-	    \fbox{\includegraphics[width=\textwidth]{images/noise_freq_001.png}}
-	    \caption{Intervalo de 0,01 segundos}
-        \label{fig:noise_analysis_001}
-    \end{subfigure}
+	% --- Segunda linha ---
+	\begin{subfigure}[b]{0.48\textwidth}
+		\centering
+		\fbox{\includegraphics[width=\textwidth]{images/noise_freq_001.png}}
+		\caption{Intervalo de 0,01 segundos}
+		\label{fig:noise_analysis_001}
+	\end{subfigure}
 
-    \caption{Coleta de dados realizadas com intervalos de medição diferentes}
-    \label{fig:noise_analysis}
+	\caption{Coleta de dados realizadas com intervalos de medição diferentes}
+	\label{fig:noise_analysis}
 \end{figure}
 
 
-A fim de determinar o intervalo de coleta que minimiza a interferência entre os sensores, foi realizado uma série de testes controlados com o mesmo dispositivo e nas mesmas condições físicas. Para cada ensaio, variou-se o tempo de espera de cada sensor antes de realizar a sequência de medições. A Figura \ref{fig:noise_analysis} apresenta três gráficos, um para cada intervalo testado. Pode-se observar através dos gráficos que, ao diminuir o tempo de espera para coleta entre cada sensor, o ruído aumenta de forma quase proporcional. Este aumento ocorre, pois com um intervalo mais curto a onda emitida por um dos sensores não possui tempo suficiente para se dissipar antes que o outro sensor inicie sua coleta, como as ondas possuem mesma frequência, os sensores não conseguem realizar uma distinção entre elas. Logo, como a distância coletada é calculada através do tempo de deslocamento, caso o sensor receba uma onda que não foi emitida por ele, o valor interpretado será incorreto, pois o \textit{hardware} não espera por este tipo de situação. No entanto, intervalos muito grandes também são um problema, porque a quantidade de dados coletados pode ser insuficiente para categorizar os eventos de interesse. Por fim, o valor adotado foi o de 0,05 segundos, uma vez que apresentou grande diminuição no ruído se comparado ao gráfico de intervalos de 0,01 segundos, bem como obteve caracterização satisfatória de eventos de interesse, diferentemente do gráfico com intervalos de 0,1 segundos.
+A fim de determinar o intervalo de coleta que minimiza a interferência entre os sensores, foi realizado uma série de testes controlados com o mesmo dispositivo e nas mesmas condições físicas. Para cada ensaio, variou-se o tempo de espera de cada sensor antes de realizar a sequência de medições. A Figura \ref{fig:noise_analysis} apresenta três gráficos, um para cada intervalo testado. Pode-se observar através dos gráficos que, ao diminuir o tempo de espera para coleta entre cada sensor, o ruído aumenta de forma quase proporcional. Este aumento ocorre, pois com um intervalo mais curto a onda emitida por um dos sensores não possui tempo suficiente para se dissipar antes que o outro sensor inicie sua coleta, como as ondas possuem mesma frequência, os sensores não conseguem realizar uma distinção entre elas. Logo, como a distância coletada é calculada através do tempo de deslocamento, caso o sensor receba uma onda que não foi emitida por ele, o valor interpretado será incorreto, pois o \textit{hardware} não sabe lidar com este tipo de situação. No entanto, intervalos muito grandes também são um problema, porque a quantidade de dados coletados pode ser insuficiente para categorizar os eventos de interesse. Por fim, o valor adotado foi o de 0,05 segundos, uma vez que apresentou grande diminuição no ruído se comparado ao gráfico de intervalos de 0,01 segundos, bem como obteve caracterização satisfatória de eventos de interesse, diferentemente do gráfico com intervalos de 0,1 segundos.
 
 Outro problema a ser analisado, consiste na dificuldade em identificar eventos de interesse e definir o início e fim destes eventos, para posterior análise. Como apresentado nas Figuras \ref{fig:data_visualization} e \ref{fig:noise_analysis} as medidas coletadas não estão livres de interferência entre os sensores, logo a caracterização de eventos de interesse, isto é, configuração de conjuntos de dados que devem ser analisados para contabilizar uma entrada ou saída de um indivíduo em uma instalação, pode ser comprometida. Como forma de lidar com esta problemática, foi acrescentado a parte física do sistema, uma divisória que é anexada a porta da instalação. Sempre que a porta se encontra fechada, a divisória reduz o alcance das ondas propagadas por um dos sensores, retornando sempre uma distância fixa, facilitando a busca por padrões de inatividade do sistema, ou seja, quando não há nenhum indivíduo entrando ou saindo. Deste modo, ao buscar eventos interesse, basta analisar conjuntos de dados que não correspondem a períodos de inatividade, esta solução facilita a caracterização e poupa processamento, tendo em vista que o sistema não precisa realizar uma análise contínua das medidas coletadas.
 
@@ -189,7 +189,7 @@ Outro problema a ser analisado, consiste na dificuldade em identificar eventos d
 \subsection{Evolução do Módulo e Estratégia de Contagem}
 \label{subsec:module_evolution}
 
-As etapas descritas anteriormente foram imprescindíveis, para delinear pontos fracos acerca do módulo de contagem de pessoas existente e através da visualização e análise dos dados, compreender como este componente do sistema pode ser melhorado. Sendo assim, a presente subseção pretende apresentar uma sequência de etapas que compõe a nova estratégia utilizada para contagem de indivíduos pelo sistema, que tem como principal objetivo suprir as necessidades destacadas anteriormente, como lidar de melhor forma com a interferência entre os sensores e identificar possíveis eventos de interesse com mais assertividade.
+As etapas descritas anteriormente foram imprescindíveis, para delinear pontos fracos acerca do módulo de contagem de pessoas existente e através da visualização e análise dos dados, compreender como este componente do sistema pode ser evoluído. Sendo assim, a presente subseção pretende apresentar uma sequência de etapas que compõe a nova estratégia utilizada para contagem de indivíduos pelo sistema, que tem como principal objetivo suprir as necessidades destacadas anteriormente, como lidar de melhor forma com a interferência entre os sensores e identificar possíveis eventos de interesse com mais assertividade.
 
 \begin{figure}[H]
     \center
@@ -200,7 +200,7 @@ As etapas descritas anteriormente foram imprescindíveis, para delinear pontos f
 
 A Figura \ref{fig:strategy_workflow} apresenta de forma sucinta, o fluxo de etapas que compõem o processo de contagem de indivíduos pelo sistema. Em contraste ao Algoritmo \ref{alg:people_counting} pode-se observar a adoção de duas novas etapas de pré-processamento, agregar medidas e suavizar dados coletados. Além disso, a discretização por meio da criação de estados de ativação(ativo ou inativo) foi mantida, no entanto a estratégia para obtenção do limite de binarização foi evoluída, para que esse valor seja obtido de forma dinâmica para cada evento detectado pelo sistema, ou seja, para cada conjunto de dados coletados.
 
-O processo de identificar uma sequência de dados que podem conter um evento de interesse, consiste em uma tarefa bem difícil como destacado em parágrafos anteriores, mais especificamente delimitar seu início e fim, tendo em vista que a interferência causada entre os sensores gera variações abruptas nos dados coletados, assim como apresentado na Figura \ref{fig:noise_analysis}. Para lidar com este tipo de comportamento, foi adicionado a etapa de agregação de medidas, que consiste apenas na soma das leituras realizadas pelo sensor externo e interno, gerando um novo tipo de informação, que é utilizado para identificar medidas que correspondem há um evento de interesse. A lógica para seu uso é muito simples, durante períodos de inatividade, isto é, que não há nenhum indivíduo entrando ou saindo da instalação, a soma das leituras deve estar compreendida em um intervalo fixo e não deve variar muito. O motivo para este comportamento consiste no fato de que, períodos de inatividade correspondem a observação de eventos estáticos, que por sua natureza  apresentam dados mais regulares, esta característica pode ser observada através dos pontos azuis presentes na Figura \ref{fig:data_collect}. Deste modo, por exclusão, pode-se concluir que apenas medidas que não se encaixam nestes parâmetros podem representar eventos de interesse. Esta abordagem é utilizada para separar e armazenar conjuntos de dados que não necessariamente retratam este tipo de evento, mas que são grandes candidatos para tal.
+O processo de identificar uma sequência de dados que podem conter um evento de interesse, consiste em uma tarefa difícil como destacado em parágrafos anteriores, mais especificamente delimitar seu início e fim, tendo em vista que a interferência causada entre os sensores gera variações abruptas nos dados coletados, assim como apresentado na Figura \ref{fig:noise_analysis}. Para lidar com este tipo de comportamento, foi adicionado a etapa de agregação de medidas, que consiste apenas na soma das leituras realizadas pelo sensor externo e interno, gerando um novo tipo de informação, que é utilizado para identificar medidas que correspondem há um evento de interesse. A lógica para seu uso é muito simples, durante períodos de inatividade, isto é, que não há nenhum indivíduo entrando ou saindo da instalação, a soma das leituras deve estar compreendida em um intervalo fixo e não deve variar muito. O motivo para este comportamento consiste no fato de que, períodos de inatividade correspondem a observação de eventos estáticos, que por sua natureza  apresentam dados mais regulares, esta característica pode ser observada através dos pontos azuis presentes na Figura \ref{fig:data_collect}. Deste modo, por exclusão, pode-se concluir que apenas medidas que não se encaixam nestes parâmetros podem representar eventos de interesse. Esta abordagem é utilizada para separar e armazenar conjuntos de dados que não necessariamente retratam este tipo de evento, mas que são grandes candidatos para tal.
 
 Mesmo após a identificação de conjuntos de dados que possam conter eventos de interesse, ainda é necessário lidar com problemas causados pela interferência entre os sensores, tendo em vista que, a existência de medidas incorretas pode impedir que o sistema identifique e contabilize uma entrada ou saída. Por este motivo, a próxima etapa após a construção destes conjuntos consiste na suavização dos dados coletados, é possível utilizar esta abordagem, pois o sistema coleta medidas com uma frequência alta, logo por mais que existam dados incorretos, outros pontos em sua vizinhança tem influência acerca do valor daquela medida, impedindo que ela corresponda a valores com grande variação. 
 
@@ -254,7 +254,7 @@ Outro método muito comum de suavização de dados, mais especificamente no âmb
 \end{equation}
 
 
-A Figura~\ref{fig:savgol_smooth} apresenta a aplicação do filtro de Savitzky-Golay ao mesmo conjunto de dados, permitindo a comparação direta com a técnica de WMA. Observa-se que o emprego de técnicas polinomiais resulta em variações mais suaves, o que é vantajoso por dois motivos principais. Primeiramente, os vales passam a apresentar formas mais arredondadas e sem variações abruptas, evitando sequências do tipo vale–pico–vale, sem que seja necessário a adoção de uma grande janela de amostras, o que reduz a ocorrência de falsas mudanças no estado de ativação dos sensores e confere maior estabilidade numérica ao sistema. Além disso, nota-se a formação de regiões de decaimento após cada grande vale, o que é particularmente útil, uma vez que a definição dos estados de ativação é realizada por meio da binarização pela média dos valores coletados. Dessa forma, a existência de um tempo de decaimento contribui para uma transição mais suave e confiável entre os estados. Por este motivo, a abordagem adotada para o processo de suavização dos dados no sistema SAFE/UFRJ, foi o filtro de Savistky-Golay.
+A Figura~\ref{fig:savgol_smooth} apresenta a aplicação do filtro de Savitzky-Golay ao mesmo conjunto de dados, permitindo a comparação direta com a técnica de WMA. Observa-se que o emprego de técnicas polinomiais resulta em variações mais suaves, algo vantajoso por dois motivos principais. Primeiramente, os vales passam a apresentar formas mais arredondadas e sem variações abruptas, evitando sequências do tipo vale–pico–vale, sem que seja necessário a adoção de uma grande janela de amostras, o que reduz a ocorrência de falsas mudanças no estado de ativação dos sensores e confere maior estabilidade numérica ao sistema. Além disso, nota-se a formação de regiões de decaimento após cada grande vale, o que é particularmente útil, uma vez que a definição dos estados de ativação é realizada por meio da binarização pela média dos valores coletados. Dessa forma, a existência de um tempo de decaimento contribui para uma transição mais suave e confiável entre os estados. Por este motivo, a abordagem adotada para o processo de suavização dos dados no sistema SAFE/UFRJ, foi o filtro de Savistky-Golay.
 
 Após o processo de suavização, é realizado a binarização por limiares para que sejam determinados os estados de ativação dos sensores interno e externo para cada medida coletada. O intuito desta binarização é o mesmo presente no Algoritmo \ref{alg:people_counting}, espera-se que através de uma sequência pré-determinada de estados, seja possível identificar e contabilizar um evento de interesse. No entanto, ao aplicar o filtro de Savistky-Golay o valor numérico coletado pelos sensores é atenuado, deste modo os limites anteriores, valores constantes, não funcionam de forma tão eficaz como anteriormente. Para gerar o novo limite de binarização, é utilizado a Equação \ref{eq:media_geral_compacta}, que consiste na média aritmética entre a média das medidas externas e a média das medidas internas após a aplicação do filtro de Savistky-Golay. 
 
@@ -323,5 +323,27 @@ Por fim, a etapa de caracterização consiste em analisar a sequência de estado
 
 \subsection{Implementação do Módulo Evoluído}
 \label{subsec:module_implementation}
+Após elaborar a sequência de etapas que demonstrou performance promissora no pré-tramento dos dados coletados pelo dispositivo BIoT, e consequentemente um melhor reconhecimento de eventos de interesse, é necessário realizar a implementação da abordagem evoluída no contexto do sistema SAFE/UFRJ, para que seu funcionamento seja avaliado em conformidade com todo os subsistemas que compõem a aplicação IoT. Deste modo, a presente subseção pretende descrever todo o processo de evolução dos componentes de \textit{software}, bem como as decisões arquiteturais adotadas tendo em vista o ambiente de desenvolvimento embarcado, no qual sistemas de \textit{software} IoT se enquadram.
 
+Atualmente, o dispositivo BIoT é composto por um microcontrolador ESP32 conectado há uma coletânea de sensores encarregados de coletar informações sobre a qualidade do ar interno e monitorar o fluxo de pessoas em uma instalação \cite{SAFE-IOT}. Para o desenvolvimento em embarcados, o uso de memória e processamento requer mais atenção, tendo em vista que este tipo de \textit{hardware} possui recursos mais limitados que estações de trabalho convencionais. O ESP32 pode ser considerado um microcontrolador poderoso, pois dispõe de um processador com dois núcleos, 520 Kbytes(KB) de memória SRAM(\textit{Static Random Acess Memory)}, 448KB de memória ROM(\textit{Read-only Memory} e 4 Megabytes(MB) destinados a memória Flash[Design and Implement...]. Além disso, esta placa de desenvolvimento apresenta módulos de Wi-Fi e Bluetooth de fábrica, facilitando a implementação de comunicação sem fio, um requisito para implementações IoT[Iot roadmap].
+
+A arquitetura \textit{dual-core} do microcontrolador em uso, possibilitou que o \textit{software} desenvolvido para o BIoT, fosse implementado através de paradigmas de computação concorrente, como estratégias \textit{lock-free}, para a alocação dinâmica de memória e políticas de escalonamento de tarefas[Fastlock, LWMalloc]. Estas decisões arquiteturais foram mantidas durante a evolução do dispositivo. Deste modo, todas as funções implementadas, que configuram a evolução do BIoT, seguem as mesmas regras de modelagem e desenvolvimento.  
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=\linewidth]{images/fluxograma_coleta_medidas_hcsr04.png}}
+    \caption{Fluxo de procedimentos para contagem de pessoas}
+    \label{fig:get_ultrassonic_measures_workflow}
+\end{figure}
+
+
+identificar possíveis eventos de interess
+
+Posterior a construção da sequência de etapas que obteve melhor performance 
+
+Sistemas de software IoT
+
+A presente seção consiste no detalhamento do processo de evolução do sistema SAFE/UFRJ, para a inserção da nova estratégia de contagem descrita anteriormente.
+
+etapa de implantação da abordagem evoluída   
 %% Fim da seção de implementação da abordagem evoluída
