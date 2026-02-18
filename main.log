@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  16 FEB 2026 23:55
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  18 FEB 2026 10:50
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1035,8 +1035,19 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \mc@col@check@num=\count397
 \g__mc_curr_col_int=\count398
 )
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 25.
+(babel)             Reported on input line 26.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
 (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -1212,27 +1223,27 @@ File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 ) (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
-LaTeX Font Info:    ... okay on input line 99.
-Package hyperref Info: Link coloring OFF on input line 99.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+Package hyperref Info: Link coloring OFF on input line 100.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 
@@ -1264,7 +1275,7 @@ e
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 99.
+loading the todonotes package. on input line 100.
 
 \c@lstlisting=\count429
 Package caption Info: Begin \AtBeginDocument code.
@@ -1278,65 +1289,66 @@ Package fontspec Info:
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup4
+\symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 99.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 99.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 99.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 99.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 99.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 99.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 99.
-LaTeX Font Info:    Redeclaring math accent \check on input line 99.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 99.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 99.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 99.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 99.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 99.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 100.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 100.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 100.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 100.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 100.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 100.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 100.
+LaTeX Font Info:    Redeclaring math accent \check on input line 100.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 100.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 100.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 100.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 100.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 99.
+(Font)              `operators' in the math version `normal' on input line 100.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TeXGyreHeros(0)/m/n on input line 99
-.
+(Font)                  OT1/cmr/m/n --> TU/TeXGyreHeros(0)/m/n on input line 10
+0.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 99.
+(Font)              `operators' in the math version `bold' on input line 100.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreHeros(0)/m/n on input line 9
-9.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreHeros(0)/m/n on input line 1
+00.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TeXGyreHeros(0)/m/n --> TU/TeXGyreHeros(0)/m/n on in
-put line 99.
+put line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TeXGyreHeros(0)/m/it on input line 
-99.
+100.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/TeXGyreHeros(0)/b/n on input line 9
-9.
+(Font)                  OT1/cmr/bx/n --> TU/TeXGyreHeros(0)/b/n on input line 1
+00.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 99.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 99.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 100.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TeXGyreHeros(0)/m/n --> TU/TeXGyreHeros(0)/b/n on in
-put line 99.
+put line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TeXGyreHeros(0)/b/it on input line
- 99.
+ 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 99.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 100.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 99.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 100.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1382,7 +1394,17 @@ Package luatex.def Info: images/Marca_Principal.png  used on input line 5.
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./images/
 Marca_Principal.png>]) (./sections/00-resumo.tex<<oml.cmap>><<oms.cmap>><<omx.cm
-ap>><<ot1.cmap>>)
+ap>>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)<<ot1.cmap>>)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1] (./main.toc)
 \tf@toc=\write5
@@ -1390,93 +1412,95 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 \openout5 = main.toc
  (./sections/01-introducao.tex [2] [3])
 (./sections/02-objetivos.tex) (./sections/03-desenvolvimento.tex
+(./sections/desenvolvimento/3_1_subsec.tex
 <images/count_people_module.png, id=102, 1139.25626pt x 869.2475pt>
 File: images/count_people_module.png Graphic file (type png)
 <use images/count_people_module.png>
-Package luatex.def Info: images/count_people_module.png  used on input line 15.
+Package luatex.def Info: images/count_people_module.png  used on input line 10.
 
 (luatex.def)             Requested size: 341.77951pt x 260.77626pt.
  [4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 30.
- [5<./images/count_people_module.png>] [6] [7]
+put line 25.
+ [5<./images/count_people_module.png>] [6]) (./sections/desenvolvimento/3_2_sub
+sec.tex [7]
 <images/data_collect.png, id=141, 1722.435pt x 886.31125pt>
 File: images/data_collect.png Graphic file (type png)
 <use images/data_collect.png>
-Package luatex.def Info: images/data_collect.png  used on input line 130.
+Package luatex.def Info: images/data_collect.png  used on input line 29.
 (luatex.def)             Requested size: 430.6077pt x 221.57727pt.
 <images/datapoints_visualization.png, id=145, 1891.065pt x 1010.77625pt>
 File: images/datapoints_visualization.png Graphic file (type png)
 <use images/datapoints_visualization.png>
 Package luatex.def Info: images/datapoints_visualization.png  used on input lin
-e 140.
+e 39.
 (luatex.def)             Requested size: 416.03558pt x 222.37146pt.
  [8<./images/data_collect.png><./images/datapoints_visualization.png>]
 <images/noise_freq_01.png, id=157, 1149.093pt x 570.933pt>
 File: images/noise_freq_01.png Graphic file (type png)
 <use images/noise_freq_01.png>
-Package luatex.def Info: images/noise_freq_01.png  used on input line 155.
+Package luatex.def Info: images/noise_freq_01.png  used on input line 54.
 (luatex.def)             Requested size: 232.17242pt x 115.35194pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 155--156
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
 <images/noise_freq_005.png, id=158, 1149.093pt x 570.933pt>
 File: images/noise_freq_005.png Graphic file (type png)
 <use images/noise_freq_005.png>
-Package luatex.def Info: images/noise_freq_005.png  used on input line 162.
+Package luatex.def Info: images/noise_freq_005.png  used on input line 61.
 (luatex.def)             Requested size: 232.17242pt x 115.35194pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 162--163
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
 <images/noise_freq_001.png, id=159, 1149.093pt x 570.933pt>
 File: images/noise_freq_001.png Graphic file (type png)
 <use images/noise_freq_001.png>
-Package luatex.def Info: images/noise_freq_001.png  used on input line 172.
+Package luatex.def Info: images/noise_freq_001.png  used on input line 71.
 (luatex.def)             Requested size: 232.17242pt x 115.35194pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 172--173
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
 [9<./images/noise_freq_01.png><./images/noise_freq_005.png><./images/noise_freq_
-001.png>]
+001.png>]) (./sections/desenvolvimento/3_3_subsec.tex
 <images/strategy_workflow.png, id=174, 1728.4575pt x 818.05624pt>
 File: images/strategy_workflow.png Graphic file (type png)
 <use images/strategy_workflow.png>
-Package luatex.def Info: images/strategy_workflow.png  used on input line 196.
+Package luatex.def Info: images/strategy_workflow.png  used on input line 8.
 (luatex.def)             Requested size: 380.26183pt x 179.97293pt.
  [10] [11<./images/strategy_workflow.png>]
 <images/wma_plot.png, id=192, 964.0818pt x 528.2937pt>
 File: images/wma_plot.png Graphic file (type png)
 <use images/wma_plot.png>
-Package luatex.def Info: images/wma_plot.png  used on input line 213.
+Package luatex.def Info: images/wma_plot.png  used on input line 25.
 (luatex.def)             Requested size: 232.17242pt x 127.2203pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 213--214
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
 <images/savgol_plot.png, id=193, 964.0818pt x 528.2937pt>
 File: images/savgol_plot.png Graphic file (type png)
 <use images/savgol_plot.png>
-Package luatex.def Info: images/savgol_plot.png  used on input line 220.
+Package luatex.def Info: images/savgol_plot.png  used on input line 32.
 (luatex.def)             Requested size: 232.17242pt x 127.2203pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 220--221
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
 <images/plot_pre_smooth.png, id=194, 1149.093pt x 570.2103pt>
 File: images/plot_pre_smooth.png Graphic file (type png)
 <use images/plot_pre_smooth.png>
-Package luatex.def Info: images/plot_pre_smooth.png  used on input line 230.
+Package luatex.def Info: images/plot_pre_smooth.png  used on input line 42.
 (luatex.def)             Requested size: 435.32422pt x 216.0209pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 230--231
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 42--43
  [][] 
  []
 
@@ -1485,55 +1509,68 @@ g>] [13]
 <images/plot_event_ex.png, id=231, 964.0818pt x 510.9489pt>
 File: images/plot_event_ex.png Graphic file (type png)
 <use images/plot_event_ex.png>
-Package luatex.def Info: images/plot_event_ex.png  used on input line 280.
+Package luatex.def Info: images/plot_event_ex.png  used on input line 92.
 (luatex.def)             Requested size: 232.17242pt x 123.04344pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 280--281
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 92--93
  [][] 
  []
 
 <images/smoothing_ex.png, id=232, 964.0818pt x 529.0164pt>
 File: images/smoothing_ex.png Graphic file (type png)
 <use images/smoothing_ex.png>
-Package luatex.def Info: images/smoothing_ex.png  used on input line 287.
+Package luatex.def Info: images/smoothing_ex.png  used on input line 99.
 (luatex.def)             Requested size: 232.17242pt x 127.39435pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 287--288
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 99--100
  [][] 
  []
 
 <images/binarization_ex.png, id=233, 1006.7211pt x 504.4446pt>
 File: images/binarization_ex.png Graphic file (type png)
 <use images/binarization_ex.png>
-Package luatex.def Info: images/binarization_ex.png  used on input line 297.
+Package luatex.def Info: images/binarization_ex.png  used on input line 109.
 (luatex.def)             Requested size: 435.32422pt x 218.1308pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 297--298
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 109--110
  [][] 
  []
 
 [14<./images/plot_event_ex.png><./images/smoothing_ex.png><./images/binarization
-_ex.png>]
-<images/fluxograma_coleta_medidas_hcsr04.png, id=249, 10037.5pt x 3278.2475pt>
+_ex.png>]) (./sections/desenvolvimento/3_4_subsec.tex [15]
+<images/fluxograma_coleta_medidas_hcsr04.png, id=256, 10037.5pt x 3278.2475pt>
 File: images/fluxograma_coleta_medidas_hcsr04.png Graphic file (type png)
 <use images/fluxograma_coleta_medidas_hcsr04.png>
 Package luatex.def Info: images/fluxograma_coleta_medidas_hcsr04.png  used on i
-nput line 334.
+nput line 11.
 (luatex.def)             Requested size: 483.69687pt x 157.96936pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 334--335
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-[15]) (./sections/04-trab-futuros.tex [16<./images/fluxograma_coleta_medidas_hcs
-r04.png>]) (./sections/06-consideracoes.tex [17]) (./main.bbl [18]
+<images/fluxograma_tarefa_consumo_eventos.png, id=259, 9198.365pt x 2238.3625pt
+>
+File: images/fluxograma_tarefa_consumo_eventos.png Graphic file (type png)
+<use images/fluxograma_tarefa_consumo_eventos.png>
+Package luatex.def Info: images/fluxograma_tarefa_consumo_eventos.png  used on 
+input line 20.
+(luatex.def)             Requested size: 483.69687pt x 117.69681pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 20--21
+ [][] 
+ []
+
+[16<./images/fluxograma_coleta_medidas_hcsr04.png><./images/fluxograma_tarefa_co
+nsumo_eventos.png>] [17])) (./sections/04-trab-futuros.tex [18])
+(./sections/06-consideracoes.tex [19]) (./main.bbl [20]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-) [19] (./main.aux)
+) [21] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
@@ -1543,15 +1580,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32158 strings out of 476081
+ 32756 strings out of 476081
  100000,1373583 words of node,token memory allocated
- 663 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 27 attribute, 68 glue_spec
-, 15 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 2:2419,3:356,4:208,5:823,6:103,7:8777,8:67,9:686,10:30,11:1133
- 53601 multiletter control sequences out of 65536+600000
- 66 fonts using 6891375 bytes
- 99i,16n,128p,1612b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 669 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 29 attribute, 68 glue_spec
+, 16 attribute_list, 2 write, 1 pdf_action nodes
+   avail lists: 2:2416,3:356,4:208,5:860,6:103,7:8777,8:67,9:686,10:30,11:1133
+ 54148 multiletter control sequences out of 65536+600000
+ 82 fonts using 8332111 bytes
+ 99i,16n,128p,1660b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-
 italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/te
 xgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/te
@@ -1563,10 +1600,10 @@ amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb>
-Output written on main.pdf (20 pages, 6372000 bytes).
+Output written on main.pdf (22 pages, 6867634 bytes).
 
-PDF statistics: 337 PDF objects out of 1000 (max. 8388607)
- 262 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 131072)
+PDF statistics: 358 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 131072)
  108 words of extra memory for PDF output out of 10000 (max. 100000000)
 

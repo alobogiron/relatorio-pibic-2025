@@ -233,6 +233,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.lua
@@ -286,6 +288,14 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/mmap/omx.cmap
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cmap/ot1.cmap
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
@@ -300,6 +310,12 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -307,8 +323,10 @@ OUTPUT main.toc
 INPUT ./sections/01-introducao.tex
 INPUT ./sections/02-objetivos.tex
 INPUT ./sections/03-desenvolvimento.tex
+INPUT ./sections/desenvolvimento/3_1_subsec.tex
 INPUT ./images/count_people_module.png
 INPUT ./images/count_people_module.png
+INPUT ./sections/desenvolvimento/3_2_subsec.tex
 INPUT ./images/data_collect.png
 INPUT ./images/data_collect.png
 INPUT ./images/datapoints_visualization.png
@@ -319,6 +337,7 @@ INPUT ./images/noise_freq_005.png
 INPUT ./images/noise_freq_005.png
 INPUT ./images/noise_freq_001.png
 INPUT ./images/noise_freq_001.png
+INPUT ./sections/desenvolvimento/3_3_subsec.tex
 INPUT ./images/strategy_workflow.png
 INPUT ./images/strategy_workflow.png
 INPUT ./images/wma_plot.png
@@ -333,8 +352,11 @@ INPUT ./images/smoothing_ex.png
 INPUT ./images/smoothing_ex.png
 INPUT ./images/binarization_ex.png
 INPUT ./images/binarization_ex.png
+INPUT ./sections/desenvolvimento/3_4_subsec.tex
 INPUT ./images/fluxograma_coleta_medidas_hcsr04.png
 INPUT ./images/fluxograma_coleta_medidas_hcsr04.png
+INPUT ./images/fluxograma_tarefa_consumo_eventos.png
+INPUT ./images/fluxograma_tarefa_consumo_eventos.png
 INPUT ./sections/04-trab-futuros.tex
 INPUT ./sections/06-consideracoes.tex
 INPUT ./main.bbl
