@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  20 FEB 2026 13:54
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  20 FEB 2026 14:11
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1600,33 +1600,34 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32792 strings out of 476081
+ 32793 strings out of 476081
  100000,1373583 words of node,token memory allocated
  700 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 6 glue, 4 kern, 1 glyph, 35 attribute, 68 glue_spec
 , 19 attribute_list, 2 write, 2 pdf_action nodes
    avail lists: 2:2413,3:353,4:208,5:848,6:101,7:8907,8:67,9:444,10:25,11:1154
- 54173 multiletter control sequences out of 65536+600000
- 89 fonts using 8830383 bytes
+ 54174 multiletter control sequences out of 65536+600000
+ 90 fonts using 8956471 bytes
  99i,13n,128p,1434b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf
-></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros
--italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/t
-exgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/t
-ex-gyre/texgyreheros-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb>
-Output written on main.pdf (24 pages, 5995947 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.ot
+f></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.o
+tf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreher
+os-italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre
+/texgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public
+/tex-gyre/texgyreheros-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb>
+Output written on main.pdf (24 pages, 5999513 bytes).
 
-PDF statistics: 402 PDF objects out of 1000 (max. 8388607)
- 313 compressed objects within 4 object streams
+PDF statistics: 410 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
  67 named destinations out of 1000 (max. 131072)
  100 words of extra memory for PDF output out of 10000 (max. 100000000)
 

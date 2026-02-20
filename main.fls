@@ -369,6 +369,7 @@ INPUT ./images/heatmap_results.png
 INPUT ./images/bar_graph_results.png
 INPUT ./images/bar_graph_results.png
 INPUT ./sections/06-consideracoes.tex
+INPUT /home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
 INPUT ./main.bbl
 INPUT ./main.aux
 INPUT ./main.out

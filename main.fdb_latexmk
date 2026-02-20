@@ -1,13 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1771604010.10456 "main.aux" "main.bbl" "main" 1771606485.27098 0
+["bibtex main"] 1771607238.58088 "main.aux" "main.bbl" "main" 1771607487.82416 0
   "./referencias.bib" 1771538477.48285 7400 717e69f83baf51ad87e3742969c7bd80 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1771606484.69848 9913 05c6274778e03d93aa62d9a37af41d9c "lualatex"
+  "main.aux" 1771607487.29246 9913 05c6274778e03d93aa62d9a37af41d9c "lualatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1771606479.95635 "main.tex" "main.pdf" "main" 1771606485.27115 0
+["lualatex"] 1771607482.42094 "main.tex" "main.pdf" "main" 1771607487.82432 0
+  "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1769003261.61067 81837 7091cab214959897276971ec5ae174a1 ""
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc" 1771602307.2776 81875 5770eaada341be7c3327eb36573a2a7c ""
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1767792938.92949 128410 3f752579a721aabb697cb5411c2b5223 ""
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1767792938.36547 127327 1c39dfa079191ba7430719f0296074a7 ""
@@ -17,6 +18,7 @@
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/texgyreheros-regular.luc" 1767793350.88536 213475 a617384da1c662797a32e9fc2e1c9c06 ""
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1771412320.47122 3440 53acdefd6342ac2f38c8aaa799cd8e47 ""
   "/home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1767792938.25746 353130 ca1f0bc650b40531361ab3ecccb63f2c ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf" 1255129361 63076 ef7732291f21ce177aa3599f7a80c3df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-bold.otf" 1257299502 135204 f5f20609880fff666e17267854df804d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-italic.otf" 1257299502 139208 418e1daec3a0c0b2d8ebb349c646ec22 ""
@@ -314,20 +316,20 @@
   "images/savgol_plot.png" 1769092430.00862 97206 2c6996f8d0025df5068cb5a079849e87 ""
   "images/smoothing_ex.png" 1770125215.65023 133476 8575821d1ed24892c78c3b7821bac64e ""
   "images/wma_plot.png" 1769092450.2652 92183 b1cd515c44b26752f45c7c0d60b9c5e8 ""
-  "main.aux" 1771606484.69848 9913 05c6274778e03d93aa62d9a37af41d9c "lualatex"
-  "main.bbl" 1771604010.2291 6204 de688eb5d66742bfd28e20e22d1b70cc "bibtex main"
-  "main.out" 1771606484.69848 1515 f70a6578743557be7d13b494cae2ccc3 "lualatex"
-  "main.tex" 1771585860.01881 3447 ccca9ce88532f7c47bc1a4f5bad13b10 ""
-  "main.toc" 1771606484.70248 768 5d955dd456c931400eaee6c37f1727bd "lualatex"
+  "main.aux" 1771607487.29246 9913 05c6274778e03d93aa62d9a37af41d9c "lualatex"
+  "main.bbl" 1771607238.69604 6204 de688eb5d66742bfd28e20e22d1b70cc "bibtex main"
+  "main.out" 1771607487.29246 1515 f70a6578743557be7d13b494cae2ccc3 "lualatex"
+  "main.tex" 1771607481.58827 3662 dbd13496bd7a7cb69e320c7eb63d33d4 ""
+  "main.toc" 1771607487.29246 768 5d955dd456c931400eaee6c37f1727bd "lualatex"
   "sections/00-resumo.tex" 1771605924.99949 1188 feae38510f64eaf246ac26a86d0a7611 ""
   "sections/01-introducao.tex" 1771605875.77782 5576 1d0eac3c76ab147b86ca8bb780445d43 ""
   "sections/03-desenvolvimento.tex" 1771587203.99366 1800 d6254f4f13f2e15586684a4f546ee2fd ""
   "sections/04-trab-futuros.tex" 1771604594.36995 5019 1add514759637cc383b0c68df859a554 ""
   "sections/06-consideracoes.tex" 1771606478.51027 3743 d8f785992f8796b807d2233495e5d3e3 ""
   "sections/desenvolvimento/3_1_subsec.tex" 1771588837.56811 7586 7d6d0b631cc7b3e3e64456e23e11f95e ""
-  "sections/desenvolvimento/3_2_subsec.tex" 1771606130.84248 10082 6f4870813e0bd49dd0eace849a9b5be9 ""
+  "sections/desenvolvimento/3_2_subsec.tex" 1771607421.79824 10082 6f4870813e0bd49dd0eace849a9b5be9 ""
   "sections/desenvolvimento/3_3_subsec.tex" 1771606277.16344 13551 9f8acc12a7e95329ff0e8af44d5e33fb ""
-  "sections/desenvolvimento/3_4_subsec.tex" 1771606381.00296 12788 687a99cc87277c332d9c52fbf431c397 ""
+  "sections/desenvolvimento/3_4_subsec.tex" 1771606911.92096 12793 c1348fae6d7d8ab0745dafa603ca0e06 ""
   "sections/title.tex" 1771605617.20503 996 87cbce90ae9467d29209e4a03016ac81 ""
   (generated)
   "main.aux"
