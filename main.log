@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  19 FEB 2026 18:57
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  20 FEB 2026 13:54
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1385,7 +1385,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (./sections/title.tex
-<images/Marca_Principal.png, id=43, 845.0772pt x 597.432pt>
+<images/Marca_Principal.png, id=39, 845.0772pt x 597.432pt>
 File: images/Marca_Principal.png Graphic file (type png)
 <use images/Marca_Principal.png>
 Package luatex.def Info: images/Marca_Principal.png  used on input line 5.
@@ -1410,33 +1410,36 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 \tf@toc=\write5
 
 \openout5 = main.toc
- (./sections/01-introducao.tex [2] [3])
-(./sections/02-objetivos.tex) (./sections/03-desenvolvimento.tex
-(./sections/desenvolvimento/3_1_subsec.tex
-<images/count_people_module.png, id=102, 1139.25626pt x 869.2475pt>
+ (./sections/01-introducao.tex [2] [3]
+Overfull \hbox (6.85838pt too wide) in paragraph at lines 17--18
+[]\TU/TeXGyreHeros(0)/m/n/10.95 Sendo as-sim, o tra-ba-lho está es-tru-tu-rado da se-guinte forma: ini-ci-al-mente, apresenta-se e descreve-
+ []
+
+) (./sections/03-desenvolvimento.tex (./sections/desenvolvimento/3_1_subsec.tex
+[4]
+<images/count_people_module.png, id=110, 1139.25626pt x 869.2475pt>
 File: images/count_people_module.png Graphic file (type png)
 <use images/count_people_module.png>
 Package luatex.def Info: images/count_people_module.png  used on input line 10.
 
 (luatex.def)             Requested size: 341.77951pt x 260.77626pt.
- [4]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 25.
- [5<./images/count_people_module.png>] [6]) (./sections/desenvolvimento/3_2_sub
-sec.tex [7]
-<images/data_collect.png, id=141, 1722.435pt x 886.31125pt>
+ [5<./images/count_people_module.png>] [6])
+(./sections/desenvolvimento/3_2_subsec.tex [7]
+<images/data_collect.png, id=144, 1722.435pt x 886.31125pt>
 File: images/data_collect.png Graphic file (type png)
 <use images/data_collect.png>
 Package luatex.def Info: images/data_collect.png  used on input line 29.
 (luatex.def)             Requested size: 430.6077pt x 221.57727pt.
-<images/datapoints_visualization.png, id=145, 1891.065pt x 1010.77625pt>
+<images/datapoints_visualization.png, id=148, 1891.065pt x 1010.77625pt>
 File: images/datapoints_visualization.png Graphic file (type png)
 <use images/datapoints_visualization.png>
 Package luatex.def Info: images/datapoints_visualization.png  used on input lin
 e 39.
 (luatex.def)             Requested size: 416.03558pt x 222.37146pt.
  [8<./images/data_collect.png><./images/datapoints_visualization.png>]
-<images/noise_freq_01.png, id=157, 1149.093pt x 570.933pt>
+<images/noise_freq_01.png, id=161, 1149.093pt x 570.933pt>
 File: images/noise_freq_01.png Graphic file (type png)
 <use images/noise_freq_01.png>
 Package luatex.def Info: images/noise_freq_01.png  used on input line 54.
@@ -1446,7 +1449,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
-<images/noise_freq_005.png, id=158, 1149.093pt x 570.933pt>
+<images/noise_freq_005.png, id=162, 1149.093pt x 570.933pt>
 File: images/noise_freq_005.png Graphic file (type png)
 <use images/noise_freq_005.png>
 Package luatex.def Info: images/noise_freq_005.png  used on input line 61.
@@ -1456,7 +1459,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
-<images/noise_freq_001.png, id=159, 1149.093pt x 570.933pt>
+<images/noise_freq_001.png, id=163, 1149.093pt x 570.933pt>
 File: images/noise_freq_001.png Graphic file (type png)
 <use images/noise_freq_001.png>
 Package luatex.def Info: images/noise_freq_001.png  used on input line 71.
@@ -1468,7 +1471,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--72
 
 [9<./images/noise_freq_01.png><./images/noise_freq_005.png><./images/noise_freq_
 001.png>]) (./sections/desenvolvimento/3_3_subsec.tex
-<images/fluxo_new_approach.png, id=174, 1477.52pt x 584.1825pt>
+<images/fluxo_new_approach.png, id=177, 1477.52pt x 584.1825pt>
 File: images/fluxo_new_approach.png Graphic file (type png)
 <use images/fluxo_new_approach.png>
 Package luatex.def Info: images/fluxo_new_approach.png  used on input line 8.
@@ -1479,71 +1482,71 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 8--9
  []
 
 [10] [11<./images/fluxo_new_approach.png>]
-<images/wma_plot.png, id=192, 964.0818pt x 528.2937pt>
+<images/wma_plot.png, id=195, 964.0818pt x 528.2937pt>
 File: images/wma_plot.png Graphic file (type png)
 <use images/wma_plot.png>
-Package luatex.def Info: images/wma_plot.png  used on input line 25.
+Package luatex.def Info: images/wma_plot.png  used on input line 29.
 (luatex.def)             Requested size: 232.17242pt x 127.2203pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 25--26
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
-<images/savgol_plot.png, id=193, 964.0818pt x 528.2937pt>
+<images/savgol_plot.png, id=196, 964.0818pt x 528.2937pt>
 File: images/savgol_plot.png Graphic file (type png)
 <use images/savgol_plot.png>
-Package luatex.def Info: images/savgol_plot.png  used on input line 32.
+Package luatex.def Info: images/savgol_plot.png  used on input line 36.
 (luatex.def)             Requested size: 232.17242pt x 127.2203pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 32--33
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 36--37
  [][] 
  []
 
-<images/plot_pre_smooth.png, id=194, 1149.093pt x 570.2103pt>
+<images/plot_pre_smooth.png, id=197, 1149.093pt x 570.2103pt>
 File: images/plot_pre_smooth.png Graphic file (type png)
 <use images/plot_pre_smooth.png>
-Package luatex.def Info: images/plot_pre_smooth.png  used on input line 42.
+Package luatex.def Info: images/plot_pre_smooth.png  used on input line 46.
 (luatex.def)             Requested size: 435.32422pt x 216.0209pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 42--43
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 46--47
  [][] 
  []
 
 [12<./images/wma_plot.png><./images/savgol_plot.png><./images/plot_pre_smooth.pn
 g>] [13]
-<images/plot_event_ex.png, id=231, 964.0818pt x 510.9489pt>
+<images/plot_event_ex.png, id=234, 964.0818pt x 510.9489pt>
 File: images/plot_event_ex.png Graphic file (type png)
 <use images/plot_event_ex.png>
-Package luatex.def Info: images/plot_event_ex.png  used on input line 92.
+Package luatex.def Info: images/plot_event_ex.png  used on input line 97.
 (luatex.def)             Requested size: 232.17242pt x 123.04344pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 92--93
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 97--98
  [][] 
  []
 
-<images/smoothing_ex.png, id=232, 964.0818pt x 529.0164pt>
+<images/smoothing_ex.png, id=235, 964.0818pt x 529.0164pt>
 File: images/smoothing_ex.png Graphic file (type png)
 <use images/smoothing_ex.png>
-Package luatex.def Info: images/smoothing_ex.png  used on input line 99.
+Package luatex.def Info: images/smoothing_ex.png  used on input line 104.
 (luatex.def)             Requested size: 232.17242pt x 127.39435pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 99--100
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
-<images/binarization_ex.png, id=233, 1006.7211pt x 504.4446pt>
+<images/binarization_ex.png, id=236, 1006.7211pt x 504.4446pt>
 File: images/binarization_ex.png Graphic file (type png)
 <use images/binarization_ex.png>
-Package luatex.def Info: images/binarization_ex.png  used on input line 109.
+Package luatex.def Info: images/binarization_ex.png  used on input line 114.
 (luatex.def)             Requested size: 435.32422pt x 218.1308pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 109--110
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 114--115
  [][] 
  []
 
 [14<./images/plot_event_ex.png><./images/smoothing_ex.png><./images/binarization
-_ex.png>]) (./sections/desenvolvimento/3_4_subsec.tex [15]
-<images/fluxograma_coleta_medidas_hcsr04.png, id=264, 1700.3525pt x 807.015pt>
+_ex.png>]) (./sections/desenvolvimento/3_4_subsec.tex
+<images/fluxograma_coleta_medidas_hcsr04.png, id=256, 1700.3525pt x 807.015pt>
 File: images/fluxograma_coleta_medidas_hcsr04.png Graphic file (type png)
 <use images/fluxograma_coleta_medidas_hcsr04.png>
 Package luatex.def Info: images/fluxograma_coleta_medidas_hcsr04.png  used on i
@@ -1554,27 +1557,27 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<images/fluxograma_tarefa_consumo_eventos.png, id=267, 1447.4075pt x 724.7075pt
+[15]
+<images/fluxograma_tarefa_consumo_eventos.png, id=272, 1447.4075pt x 724.7075pt
 >
 File: images/fluxograma_tarefa_consumo_eventos.png Graphic file (type png)
 <use images/fluxograma_tarefa_consumo_eventos.png>
 Package luatex.def Info: images/fluxograma_tarefa_consumo_eventos.png  used on 
-input line 20.
+input line 24.
 (luatex.def)             Requested size: 483.69687pt x 242.18414pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 20--21
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
 [16<./images/fluxograma_coleta_medidas_hcsr04.png>] [17<./images/fluxograma_tare
-fa_consumo_eventos.png>] [18])) (./sections/04-trab-futuros.tex
-<images/heatmap_results.png, id=292, 962.6364pt x 604.8999pt>
+fa_consumo_eventos.png>] [18])) (./sections/04-trab-futuros.tex [19]
+<images/heatmap_results.png, id=308, 962.6364pt x 604.8999pt>
 File: images/heatmap_results.png Graphic file (type png)
 <use images/heatmap_results.png>
 Package luatex.def Info: images/heatmap_results.png  used on input line 11.
 (luatex.def)             Requested size: 385.04774pt x 241.95567pt.
- [19]
-<images/bar_graph_results.png, id=300, 1004.19165pt x 570.933pt>
+<images/bar_graph_results.png, id=310, 1004.19165pt x 570.933pt>
 File: images/bar_graph_results.png Graphic file (type png)
 <use images/bar_graph_results.png>
 Package luatex.def Info: images/bar_graph_results.png  used on input line 20.
@@ -1593,34 +1596,37 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 30989633F0B5EC71727BD8167113A3F2;1695.
+(rerunfilecheck)             Checksum: F70A6578743557BE7D13B494CAE2CCC3;1515.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32788 strings out of 476081
+ 32792 strings out of 476081
  100000,1373583 words of node,token memory allocated
- 681 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 31 attribute, 68 glue_spec
-, 17 attribute_list, 2 write, 2 pdf_action nodes
-   avail lists: 2:2413,3:356,4:208,5:849,6:102,7:8777,8:67,9:448,10:30,11:1133
- 54167 multiletter control sequences out of 65536+600000
- 82 fonts using 8332111 bytes
- 99i,13n,128p,1660b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-
-italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/te
-xgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/te
-x-gyre/texgyreheros-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb>
-Output written on main.pdf (24 pages, 5988390 bytes).
+ 700 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 6 glue, 4 kern, 1 glyph, 35 attribute, 68 glue_spec
+, 19 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 2:2413,3:353,4:208,5:848,6:101,7:8907,8:67,9:444,10:25,11:1154
+ 54173 multiletter control sequences out of 65536+600000
+ 89 fonts using 8830383 bytes
+ 99i,13n,128p,1434b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-PDF statistics: 385 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
+</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf
+></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros
+-italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/t
+exgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/t
+ex-gyre/texgyreheros-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb>
+Output written on main.pdf (24 pages, 5995947 bytes).
+
+PDF statistics: 402 PDF objects out of 1000 (max. 8388607)
+ 313 compressed objects within 4 object streams
  67 named destinations out of 1000 (max. 131072)
- 108 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 100 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -321,7 +321,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 OUTPUT main.toc
 INPUT ./sections/01-introducao.tex
-INPUT ./sections/02-objetivos.tex
 INPUT ./sections/03-desenvolvimento.tex
 INPUT ./sections/desenvolvimento/3_1_subsec.tex
 INPUT ./images/count_people_module.png
@@ -357,6 +356,13 @@ INPUT ./images/fluxograma_coleta_medidas_hcsr04.png
 INPUT ./images/fluxograma_coleta_medidas_hcsr04.png
 INPUT ./images/fluxograma_tarefa_consumo_eventos.png
 INPUT ./images/fluxograma_tarefa_consumo_eventos.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT /home/alobogiron/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc
 INPUT ./sections/04-trab-futuros.tex
 INPUT ./images/heatmap_results.png
 INPUT ./images/heatmap_results.png
