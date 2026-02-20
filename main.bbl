@@ -107,4 +107,30 @@ R.~W. Schafer, ``What {Is} a {Savitzky}-{Golay} {Filter}? [{Lecture}
   {Notes}],'' \emph{IEEE Signal Processing Magazine}, vol.~28, no.~4, pp.
   111--117, 2011.
 
+\bibitem{hercog_design_2023}
+\BIBentryALTinterwordspacing
+D.~Hercog, T.~Lerher, M.~Truntič, and O.~Težak, ``Design and {Implementation}
+  of {ESP32}-{Based} {IoT} {Devices},'' \emph{Sensors}, vol.~23, no.~15, 2023.
+  [Online]. Available: \url{https://www.mdpi.com/1424-8220/23/15/6739}
+\BIBentrySTDinterwordspacing
+
+\bibitem{motta_evidence-based_2023}
+\BIBentryALTinterwordspacing
+R.~C. Motta, K.~M.~d. Oliveira, and G.~H. Travassos, ``An evidence-based
+  roadmap for {IoT} software systems engineering,'' \emph{Journal of Systems
+  and Software}, vol. 201, p. 111680, 2023. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S0164121223000754}
+\BIBentrySTDinterwordspacing
+
+\bibitem{kim_lwmalloc_2025}
+T.~Kim and H.~Kim, ``{LWMalloc}: {A} {Lightweight} {Dynamic} {Memory}
+  {Allocator} for {Resource}-{Constrained} {Environments},'' \emph{IEEE
+  Internet of Things Journal}, vol.~12, no.~12, pp. 19\,532--19\,548, 2025.
+
+\bibitem{lee_fast_2011}
+D.~Lee, J.~Kim, U.~Kim, Y.~I. Eom, H.~K. Jun, and W.~T. Kim, ``A {Fast}
+  {Lock}-{Free} {User} {Memory} {Space} {Allocator} for {Embedded} {Systems},''
+  in \emph{2011 {International} {Conference} on {Computational} {Science} and
+  {Its} {Applications}}, 2011, pp. 227--230.
+
 \end{thebibliography}

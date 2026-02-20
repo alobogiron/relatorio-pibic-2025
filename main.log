@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  18 FEB 2026 10:50
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2026.1.7)  19 FEB 2026 18:57
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1468,12 +1468,17 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--72
 
 [9<./images/noise_freq_01.png><./images/noise_freq_005.png><./images/noise_freq_
 001.png>]) (./sections/desenvolvimento/3_3_subsec.tex
-<images/strategy_workflow.png, id=174, 1728.4575pt x 818.05624pt>
-File: images/strategy_workflow.png Graphic file (type png)
-<use images/strategy_workflow.png>
-Package luatex.def Info: images/strategy_workflow.png  used on input line 8.
-(luatex.def)             Requested size: 380.26183pt x 179.97293pt.
- [10] [11<./images/strategy_workflow.png>]
+<images/fluxo_new_approach.png, id=174, 1477.52pt x 584.1825pt>
+File: images/fluxo_new_approach.png Graphic file (type png)
+<use images/fluxo_new_approach.png>
+Package luatex.def Info: images/fluxo_new_approach.png  used on input line 8.
+(luatex.def)             Requested size: 483.69687pt x 191.23871pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 8--9
+ [] 
+ []
+
+[10] [11<./images/fluxo_new_approach.png>]
 <images/wma_plot.png, id=192, 964.0818pt x 528.2937pt>
 File: images/wma_plot.png Graphic file (type png)
 <use images/wma_plot.png>
@@ -1538,39 +1543,51 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 109--110
 
 [14<./images/plot_event_ex.png><./images/smoothing_ex.png><./images/binarization
 _ex.png>]) (./sections/desenvolvimento/3_4_subsec.tex [15]
-<images/fluxograma_coleta_medidas_hcsr04.png, id=256, 10037.5pt x 3278.2475pt>
+<images/fluxograma_coleta_medidas_hcsr04.png, id=264, 1700.3525pt x 807.015pt>
 File: images/fluxograma_coleta_medidas_hcsr04.png Graphic file (type png)
 <use images/fluxograma_coleta_medidas_hcsr04.png>
 Package luatex.def Info: images/fluxograma_coleta_medidas_hcsr04.png  used on i
 nput line 11.
-(luatex.def)             Requested size: 483.69687pt x 157.96936pt.
+(luatex.def)             Requested size: 483.69687pt x 229.57066pt.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<images/fluxograma_tarefa_consumo_eventos.png, id=259, 9198.365pt x 2238.3625pt
+<images/fluxograma_tarefa_consumo_eventos.png, id=267, 1447.4075pt x 724.7075pt
 >
 File: images/fluxograma_tarefa_consumo_eventos.png Graphic file (type png)
 <use images/fluxograma_tarefa_consumo_eventos.png>
 Package luatex.def Info: images/fluxograma_tarefa_consumo_eventos.png  used on 
 input line 20.
-(luatex.def)             Requested size: 483.69687pt x 117.69681pt.
+(luatex.def)             Requested size: 483.69687pt x 242.18414pt.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 20--21
  [][] 
  []
 
-[16<./images/fluxograma_coleta_medidas_hcsr04.png><./images/fluxograma_tarefa_co
-nsumo_eventos.png>] [17])) (./sections/04-trab-futuros.tex [18])
-(./sections/06-consideracoes.tex [19]) (./main.bbl [20]
+[16<./images/fluxograma_coleta_medidas_hcsr04.png>] [17<./images/fluxograma_tare
+fa_consumo_eventos.png>] [18])) (./sections/04-trab-futuros.tex
+<images/heatmap_results.png, id=292, 962.6364pt x 604.8999pt>
+File: images/heatmap_results.png Graphic file (type png)
+<use images/heatmap_results.png>
+Package luatex.def Info: images/heatmap_results.png  used on input line 11.
+(luatex.def)             Requested size: 385.04774pt x 241.95567pt.
+ [19]
+<images/bar_graph_results.png, id=300, 1004.19165pt x 570.933pt>
+File: images/bar_graph_results.png Graphic file (type png)
+<use images/bar_graph_results.png>
+Package luatex.def Info: images/bar_graph_results.png  used on input line 20.
+(luatex.def)             Requested size: 401.66954pt x 228.36914pt.
+ [20<./images/heatmap_results.png><./images/bar_graph_results.png>])
+(./sections/06-consideracoes.tex [21]) (./main.bbl [22]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en'. Using the pattern for
 ** the default language instead.
-) [21] (./main.aux)
+) [23] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
@@ -1580,15 +1597,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32756 strings out of 476081
+ 32788 strings out of 476081
  100000,1373583 words of node,token memory allocated
- 669 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 29 attribute, 68 glue_spec
-, 16 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 2:2416,3:356,4:208,5:860,6:103,7:8777,8:67,9:686,10:30,11:1133
- 54148 multiletter control sequences out of 65536+600000
+ 681 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 31 attribute, 68 glue_spec
+, 17 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 2:2413,3:356,4:208,5:849,6:102,7:8777,8:67,9:448,10:30,11:1133
+ 54167 multiletter control sequences out of 65536+600000
  82 fonts using 8332111 bytes
- 99i,16n,128p,1660b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,13n,128p,1660b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/texgyreheros-
 italic.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/te
 xgyreheros-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/te
@@ -1600,10 +1617,10 @@ amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb>
-Output written on main.pdf (22 pages, 6867634 bytes).
+Output written on main.pdf (24 pages, 5988390 bytes).
 
-PDF statistics: 358 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 131072)
+PDF statistics: 385 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 67 named destinations out of 1000 (max. 131072)
  108 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -7,5 +7,5 @@
 \contentsline {subsection}{\numberline {3.2}Análise Exploratória dos Dados}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Evolução do Módulo e Estratégia de Contagem}{10}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Implementação do Módulo Evoluído}{15}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Resultados e Discussões}{18}{section.4}%
-\contentsline {section}{\numberline {5}Considerações Finais}{19}{section.5}%
+\contentsline {section}{\numberline {4}Resultados e Discussões}{19}{section.4}%
+\contentsline {section}{\numberline {5}Considerações Finais}{21}{section.5}%

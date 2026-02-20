@@ -338,8 +338,8 @@ INPUT ./images/noise_freq_005.png
 INPUT ./images/noise_freq_001.png
 INPUT ./images/noise_freq_001.png
 INPUT ./sections/desenvolvimento/3_3_subsec.tex
-INPUT ./images/strategy_workflow.png
-INPUT ./images/strategy_workflow.png
+INPUT ./images/fluxo_new_approach.png
+INPUT ./images/fluxo_new_approach.png
 INPUT ./images/wma_plot.png
 INPUT ./images/wma_plot.png
 INPUT ./images/savgol_plot.png
@@ -358,6 +358,10 @@ INPUT ./images/fluxograma_coleta_medidas_hcsr04.png
 INPUT ./images/fluxograma_tarefa_consumo_eventos.png
 INPUT ./images/fluxograma_tarefa_consumo_eventos.png
 INPUT ./sections/04-trab-futuros.tex
+INPUT ./images/heatmap_results.png
+INPUT ./images/heatmap_results.png
+INPUT ./images/bar_graph_results.png
+INPUT ./images/bar_graph_results.png
 INPUT ./sections/06-consideracoes.tex
 INPUT ./main.bbl
 INPUT ./main.aux
